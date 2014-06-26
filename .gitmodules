@@ -1,0 +1,6 @@
+[submodule "libs/JDJsonDecoder"]
+	path = libs/JDJsonDecoder
+	url = https://github.com/eungkyu/JDJsonDecoder.git
+[submodule "libs/AutoCoding"]
+	path = libs/AutoCoding
+	url = https://github.com/nicklockwood/AutoCoding.git
