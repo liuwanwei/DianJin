@@ -6,7 +6,10 @@
 #
 Pods/
 Build/
-DianJin.xcworkspace/
+DianJin.xcodeproj/project.xcworkspace/xcuserdata/
+DianJin.xcworkspace/xcuserdata/
+.DS_Store
+
 
 
 
