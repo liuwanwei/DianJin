@@ -12,9 +12,20 @@
 
 @implementation AppDelegate
 
+- (void)didSucceed:(BaseOperation *)operation{
+    
+}
+
+- (void)didFail:(BaseOperation *)operation{
+    
+}
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    GetShopsOperation * op = [[GetShopsOperation alloc] initWithLongitude:@"113.7" andLatitude:@"34.5"];
+    [op startRequest:self];
+    
     return YES;
 }
 							

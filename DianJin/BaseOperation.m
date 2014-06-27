@@ -7,8 +7,8 @@
 
 #import "BaseOperation.h"
 
-#define ROOT_URL @"http://115.29.148.60/index.php?r="
-#define MakeApiUrl(subUrl,param)  [NSString stringWithFormat:@"%@%@&req=%@",ROOT_URL,subUrl,param]
+#define ROOT_URL @"http://115.29.38.195:8080"
+#define MakeApiUrl(subUrl,param)  [NSString stringWithFormat:@"%@%@?%@",ROOT_URL,subUrl,param]
 
 #define HEAD @"head"
 #define CODE @"code"
@@ -59,6 +59,14 @@
 
 - (void)dealloc {
     [_request clearDelegatesAndCancel];
+}
+
+
+- (NSString *)makeKeyValuePair:(NSDictionary *)params{
+    NSMutableString * pair = [[NSMutableString alloc] init];
+    for (NSString * key in [params allKeys]) {
+        NSString * value = [params objectForKey:key];
+    }
 }
 
 // 根据参数和子URL生成GET请求时用到的最终API URL。

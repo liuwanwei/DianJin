@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		5B477B1166D14E60952156B1 /* libPods-DianJin.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 270BA583725144BB9BF2DC96 /* libPods-DianJin.a */; };
+		FB20A8A8195C0FF900129C07 /* GetShopsOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = FB20A8A7195C0FF900129C07 /* GetShopsOperation.m */; };
+		FB20A8AF195C134900129C07 /* BaseResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = FB20A8AE195C134900129C07 /* BaseResponse.m */; };
+		FB20A8B2195C14A300129C07 /* HomePageShops.m in Sources */ = {isa = PBXBuildFile; fileRef = FB20A8B1195C14A300129C07 /* HomePageShops.m */; };
+		FB20A8B5195C14C700129C07 /* Shop.m in Sources */ = {isa = PBXBuildFile; fileRef = FB20A8B4195C14C700129C07 /* Shop.m */; };
+		FB20A8B8195C17CF00129C07 /* DJOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = FB20A8B7195C17CF00129C07 /* DJOperation.m */; };
+		FB20A8BB195C1A1B00129C07 /* JDJsonDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = FB20A8BA195C1A1B00129C07 /* JDJsonDecoder.m */; };
 		FB9B26FB1939B43800A02565 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB9B26FA1939B43800A02565 /* Foundation.framework */; };
 		FB9B26FD1939B43800A02565 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB9B26FC1939B43800A02565 /* CoreGraphics.framework */; };
 		FB9B26FF1939B43800A02565 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB9B26FE1939B43800A02565 /* UIKit.framework */; };
@@ -38,6 +44,18 @@
 /* Begin PBXFileReference section */
 		270BA583725144BB9BF2DC96 /* libPods-DianJin.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DianJin.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E8583988C5648C0BACDE7E5 /* Pods-DianJin.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DianJin.xcconfig"; path = "Pods/Pods-DianJin.xcconfig"; sourceTree = "<group>"; };
+		FB20A8A6195C0FF900129C07 /* GetShopsOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetShopsOperation.h; sourceTree = "<group>"; };
+		FB20A8A7195C0FF900129C07 /* GetShopsOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetShopsOperation.m; sourceTree = "<group>"; };
+		FB20A8AD195C134900129C07 /* BaseResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseResponse.h; sourceTree = "<group>"; };
+		FB20A8AE195C134900129C07 /* BaseResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseResponse.m; sourceTree = "<group>"; };
+		FB20A8B0195C14A300129C07 /* HomePageShops.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomePageShops.h; sourceTree = "<group>"; };
+		FB20A8B1195C14A300129C07 /* HomePageShops.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomePageShops.m; sourceTree = "<group>"; };
+		FB20A8B3195C14C700129C07 /* Shop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Shop.h; sourceTree = "<group>"; };
+		FB20A8B4195C14C700129C07 /* Shop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Shop.m; sourceTree = "<group>"; };
+		FB20A8B6195C17CF00129C07 /* DJOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DJOperation.h; sourceTree = "<group>"; };
+		FB20A8B7195C17CF00129C07 /* DJOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DJOperation.m; sourceTree = "<group>"; };
+		FB20A8B9195C1A1B00129C07 /* JDJsonDecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDJsonDecoder.h; sourceTree = "<group>"; };
+		FB20A8BA195C1A1B00129C07 /* JDJsonDecoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDJsonDecoder.m; sourceTree = "<group>"; };
 		FB9B26F71939B43800A02565 /* DianJin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DianJin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB9B26FA1939B43800A02565 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		FB9B26FC1939B43800A02565 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -86,6 +104,44 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FB20A8AC195C132900129C07 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				FB20A8AD195C134900129C07 /* BaseResponse.h */,
+				FB20A8AE195C134900129C07 /* BaseResponse.m */,
+				FB20A8B3195C14C700129C07 /* Shop.h */,
+				FB20A8B4195C14C700129C07 /* Shop.m */,
+				FB20A8B0195C14A300129C07 /* HomePageShops.h */,
+				FB20A8B1195C14A300129C07 /* HomePageShops.m */,
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
+		FB20A8BC195C1A2100129C07 /* JDJsonDecoder */ = {
+			isa = PBXGroup;
+			children = (
+				FB20A8B9195C1A1B00129C07 /* JDJsonDecoder.h */,
+				FB20A8BA195C1A1B00129C07 /* JDJsonDecoder.m */,
+			);
+			name = JDJsonDecoder;
+			sourceTree = "<group>";
+		};
+		FB20A8BD195C1A3100129C07 /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+				FB20A8BE195D512900129C07 /* QueryStringBuilder */,
+				FB20A8BC195C1A2100129C07 /* JDJsonDecoder */,
+			);
+			name = Libs;
+			sourceTree = "<group>";
+		};
+		FB20A8BE195D512900129C07 /* QueryStringBuilder */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = QueryStringBuilder;
+			sourceTree = "<group>";
+		};
 		FB9B26EE1939B43800A02565 = {
 			isa = PBXGroup;
 			children = (
@@ -121,6 +177,8 @@
 		FB9B27001939B43800A02565 /* DianJin */ = {
 			isa = PBXGroup;
 			children = (
+				FB20A8BD195C1A3100129C07 /* Libs */,
+				FB20A8AC195C132900129C07 /* model */,
 				FB9B272F1939BACF00A02565 /* Operation */,
 				FB9B27091939B43800A02565 /* AppDelegate.h */,
 				FB9B270A1939B43800A02565 /* AppDelegate.m */,
@@ -167,6 +225,10 @@
 			children = (
 				FB9B27301939BB0100A02565 /* BaseOperation.h */,
 				FB9B27311939BB0100A02565 /* BaseOperation.m */,
+				FB20A8B6195C17CF00129C07 /* DJOperation.h */,
+				FB20A8B7195C17CF00129C07 /* DJOperation.m */,
+				FB20A8A6195C0FF900129C07 /* GetShopsOperation.h */,
+				FB20A8A7195C0FF900129C07 /* GetShopsOperation.m */,
 			);
 			name = Operation;
 			sourceTree = "<group>";
@@ -303,9 +365,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB20A8B2195C14A300129C07 /* HomePageShops.m in Sources */,
 				FB9B27111939B43800A02565 /* ViewController.m in Sources */,
+				FB20A8AF195C134900129C07 /* BaseResponse.m in Sources */,
+				FB20A8B5195C14C700129C07 /* Shop.m in Sources */,
+				FB20A8B8195C17CF00129C07 /* DJOperation.m in Sources */,
+				FB20A8A8195C0FF900129C07 /* GetShopsOperation.m in Sources */,
 				FB9B270B1939B43800A02565 /* AppDelegate.m in Sources */,
 				FB9B27321939BB0100A02565 /* BaseOperation.m in Sources */,
+				FB20A8BB195C1A1B00129C07 /* JDJsonDecoder.m in Sources */,
 				FB9B27071939B43800A02565 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

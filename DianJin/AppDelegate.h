@@ -8,7 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+#import "GetShopsOperation.h"
+
+@interface AppDelegate : UIResponder <UIApplicationDelegate, BaseOperationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 
