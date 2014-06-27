@@ -8,8 +8,11 @@
 
 #import "BaseResponse.h"
 
+@class Shop;
+
 @interface HomePageShops : BaseResponse
 
-@property (nonatomic, retain) NSArray * cShops;
+@property (nonatomic, strong) NSArray * cShops;
+@property (nonatomic, strong) Shop * cShops__member;    // 用来描述cShops的成员类型
 
 @end

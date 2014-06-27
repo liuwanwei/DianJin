@@ -14,6 +14,7 @@
 		FB20A8B5195C14C700129C07 /* Shop.m in Sources */ = {isa = PBXBuildFile; fileRef = FB20A8B4195C14C700129C07 /* Shop.m */; };
 		FB20A8B8195C17CF00129C07 /* DJOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = FB20A8B7195C17CF00129C07 /* DJOperation.m */; };
 		FB20A8BB195C1A1B00129C07 /* JDJsonDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = FB20A8BA195C1A1B00129C07 /* JDJsonDecoder.m */; };
+		FB20A8CA195D5B7C00129C07 /* NSDictionary+QueryStringBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = FB20A8C9195D5B7C00129C07 /* NSDictionary+QueryStringBuilder.m */; };
 		FB9B26FB1939B43800A02565 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB9B26FA1939B43800A02565 /* Foundation.framework */; };
 		FB9B26FD1939B43800A02565 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB9B26FC1939B43800A02565 /* CoreGraphics.framework */; };
 		FB9B26FF1939B43800A02565 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB9B26FE1939B43800A02565 /* UIKit.framework */; };
@@ -56,6 +57,8 @@
 		FB20A8B7195C17CF00129C07 /* DJOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DJOperation.m; sourceTree = "<group>"; };
 		FB20A8B9195C1A1B00129C07 /* JDJsonDecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDJsonDecoder.h; sourceTree = "<group>"; };
 		FB20A8BA195C1A1B00129C07 /* JDJsonDecoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDJsonDecoder.m; sourceTree = "<group>"; };
+		FB20A8C8195D5B7C00129C07 /* NSDictionary+QueryStringBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+QueryStringBuilder.h"; sourceTree = "<group>"; };
+		FB20A8C9195D5B7C00129C07 /* NSDictionary+QueryStringBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+QueryStringBuilder.m"; sourceTree = "<group>"; };
 		FB9B26F71939B43800A02565 /* DianJin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DianJin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB9B26FA1939B43800A02565 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		FB9B26FC1939B43800A02565 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -138,6 +141,8 @@
 		FB20A8BE195D512900129C07 /* QueryStringBuilder */ = {
 			isa = PBXGroup;
 			children = (
+				FB20A8C8195D5B7C00129C07 /* NSDictionary+QueryStringBuilder.h */,
+				FB20A8C9195D5B7C00129C07 /* NSDictionary+QueryStringBuilder.m */,
 			);
 			name = QueryStringBuilder;
 			sourceTree = "<group>";
@@ -367,6 +372,7 @@
 			files = (
 				FB20A8B2195C14A300129C07 /* HomePageShops.m in Sources */,
 				FB9B27111939B43800A02565 /* ViewController.m in Sources */,
+				FB20A8CA195D5B7C00129C07 /* NSDictionary+QueryStringBuilder.m in Sources */,
 				FB20A8AF195C134900129C07 /* BaseResponse.m in Sources */,
 				FB20A8B5195C14C700129C07 /* Shop.m in Sources */,
 				FB20A8B8195C17CF00129C07 /* DJOperation.m in Sources */,

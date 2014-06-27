@@ -15,7 +15,7 @@
     NSMutableDictionary * djParams = [NSMutableDictionary dictionaryWithDictionary:params];
     [djParams setObject:@"json" forKey:@"format"];
     
-    return [super makeGetApiUrl:subUrl withParams:params];
+    return [super makeGetApiUrl:subUrl withParams:djParams];
 }
 
 - (void)initResponseForRequest:(ASIHTTPRequest *)request{

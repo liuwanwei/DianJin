@@ -6,16 +6,17 @@
 //
 
 #import "BaseOperation.h"
+#import "NSDictionary+QueryStringBuilder.h"
 
 #define ROOT_URL @"http://115.29.38.195:8080"
-#define MakeApiUrl(subUrl,param)  [NSString stringWithFormat:@"%@%@?%@",ROOT_URL,subUrl,param]
+#define MakeApiUrl(subUrl,param)  [NSString stringWithFormat:@"%@%@%@",ROOT_URL,subUrl,param]
 
-#define HEAD @"head"
-#define CODE @"code"
-#define MSG @"msg"
-#define BODY @"body"
+#define HEAD  @"head"
+#define CODE  @"code"
+#define MSG   @"msg"
+#define BODY  @"body"
 #define TOTAL @"total"
-#define ROWS @"rows"
+#define ROWS  @"rows"
 
 
 @interface BaseOperation() {
@@ -61,28 +62,20 @@
     [_request clearDelegatesAndCancel];
 }
 
-
-- (NSString *)makeKeyValuePair:(NSDictionary *)params{
-    NSMutableString * pair = [[NSMutableString alloc] init];
-    for (NSString * key in [params allKeys]) {
-        NSString * value = [params objectForKey:key];
-    }
-}
-
 // 根据参数和子URL生成GET请求时用到的最终API URL。
 - (NSURL *)makeGetApiUrl:(NSString *)subUrl withParams:(NSDictionary *)params{
-    NSString * paramString = [params JSONString];
+    NSString * paramString = [params queryString];
     
-    // OBJ-C的urlencode。Json出现在HTTP URL中时，需要编码成URL格式。
-    paramString = (NSString *)
-    CFBridgingRelease(CFURLCreateStringByAddingPercentEscapes(kCFAllocatorDefault,
-                                                              (CFStringRef)paramString,
-                                                              NULL,
-                                                              NULL,
-                                                              kCFStringEncodingUTF8));
-   
-    
-    return [NSURL URLWithString:MakeApiUrl(subUrl, paramString)];
+//    // OBJ-C的urlencode。Json出现在HTTP URL中时，需要编码成URL格式。
+//    paramString = (NSString *)
+//    CFBridgingRelease(CFURLCreateStringByAddingPercentEscapes(kCFAllocatorDefault,
+//                                                              (CFStringRef)paramString,
+//                                                              NULL,
+//                                                              NULL,
+//                                                              kCFStringEncodingUTF8));
+//   
+    NSString * apiUrl = MakeApiUrl(subUrl, paramString);
+    return [NSURL URLWithString:apiUrl];
 }
 
 - (NSURL *)makePostApiUrl:(NSString *)subUrl {
