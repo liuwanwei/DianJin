@@ -23,12 +23,14 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
-    static GetNearbyShopsOperation * op;
-    op = [[GetNearbyShopsOperation alloc] init];
-    op.longitude = @"113.7";
-    op.latitude = @"37.5";
-    op.radius = 100000;
-    op.trade = 1;
+//    static GetNearbyShopsOperation * op;
+//    op = [[GetNearbyShopsOperation alloc] init];
+//    op.longitude = @"113.7";
+//    op.latitude = @"37.5";
+//    op.radius = 100000;
+//    op.trade = 1;
+    static GetAllTradesOperation * op;
+    op = [[GetAllTradesOperation alloc] init];
     [op startRequest:self];
     NSLog(@"start request");
     

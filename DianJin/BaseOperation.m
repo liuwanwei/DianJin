@@ -6,6 +6,7 @@
 //
 
 #import "BaseOperation.h"
+#import "JSONKit.h"
 #import "NSDictionary+QueryStringBuilder.h"
 
 #define ROOT_URL @"http://115.29.38.195:8080"

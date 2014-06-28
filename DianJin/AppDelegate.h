@@ -10,6 +10,7 @@
 
 #import "GetShopsOperation.h"
 #import "GetNearbyShopsOperation.h"
+#import "GetAllTradesOperation.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate, BaseOperationDelegate>
 

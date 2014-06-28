@@ -9,13 +9,10 @@
 #import <Foundation/Foundation.h>
 #import "ASINetworkQueue.h"
 #import "ASIFormDataRequest.h"
-#import "JSONKit.h"
 
 #define SUCCESS 0
 #define ERROR -1
 #define ERROR_EMPTY -2
-#define ERROE_DEL_PRAISE -5
-#define SUCCESS_CANCEL_COLLECT_ACTIVITY -14
 
 #define LIMIT 18
 
