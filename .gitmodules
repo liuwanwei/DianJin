@@ -7,3 +7,6 @@
 [submodule "libs/QueryStringBuilder"]
 	path = libs/QueryStringBuilder
 	url = https://gist.github.com/liuwanwei/b5e35f7096809b4664d4
+[submodule "libs/iOSUtils"]
+	path = libs/iOSUtils
+	url = https://github.com/liuwanwei/iOSUtils.git

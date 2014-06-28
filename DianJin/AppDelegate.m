@@ -29,8 +29,12 @@
 //    op.latitude = @"37.5";
 //    op.radius = 100000;
 //    op.trade = 1;
-    static GetAllTradesOperation * op;
-    op = [[GetAllTradesOperation alloc] init];
+//    static GetAllTradesOperation * op;
+//    op = [[GetAllTradesOperation alloc] init];
+    static GetShopsByDistanceOperation * op;
+    op.longitude = @"113.5";
+    op.latitude = @"34.5";
+    op = [[GetShopsByDistanceOperation alloc] init];//WithLongitude:@"113.7" andLatitude:@"37.5"];
     [op startRequest:self];
     NSLog(@"start request");
     

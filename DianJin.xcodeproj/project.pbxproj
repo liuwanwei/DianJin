@@ -20,6 +20,8 @@
 		FB20A8D3195E86E600129C07 /* Trade.m in Sources */ = {isa = PBXBuildFile; fileRef = FB20A8D2195E86E600129C07 /* Trade.m */; };
 		FB20A8D6195E875400129C07 /* QueryTradesResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = FB20A8D5195E875400129C07 /* QueryTradesResponse.m */; };
 		FB20A8D9195E880C00129C07 /* GetAllTradesOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = FB20A8D8195E880C00129C07 /* GetAllTradesOperation.m */; };
+		FB20A8DD195E99AD00129C07 /* GetShopsByDistanceOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = FB20A8DC195E99AD00129C07 /* GetShopsByDistanceOperation.m */; };
+		FB20A8E4195EADB100129C07 /* NSMutableDictionary+SafeSetObject.m in Sources */ = {isa = PBXBuildFile; fileRef = FB20A8E3195EADB100129C07 /* NSMutableDictionary+SafeSetObject.m */; };
 		FB9B26FB1939B43800A02565 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB9B26FA1939B43800A02565 /* Foundation.framework */; };
 		FB9B26FD1939B43800A02565 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB9B26FC1939B43800A02565 /* CoreGraphics.framework */; };
 		FB9B26FF1939B43800A02565 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB9B26FE1939B43800A02565 /* UIKit.framework */; };
@@ -74,6 +76,10 @@
 		FB20A8D5195E875400129C07 /* QueryTradesResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QueryTradesResponse.m; sourceTree = "<group>"; };
 		FB20A8D7195E880C00129C07 /* GetAllTradesOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetAllTradesOperation.h; sourceTree = "<group>"; };
 		FB20A8D8195E880C00129C07 /* GetAllTradesOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetAllTradesOperation.m; sourceTree = "<group>"; };
+		FB20A8DB195E99AD00129C07 /* GetShopsByDistanceOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetShopsByDistanceOperation.h; sourceTree = "<group>"; };
+		FB20A8DC195E99AD00129C07 /* GetShopsByDistanceOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetShopsByDistanceOperation.m; sourceTree = "<group>"; };
+		FB20A8E2195EADB100129C07 /* NSMutableDictionary+SafeSetObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+SafeSetObject.h"; sourceTree = "<group>"; };
+		FB20A8E3195EADB100129C07 /* NSMutableDictionary+SafeSetObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+SafeSetObject.m"; sourceTree = "<group>"; };
 		FB9B26F71939B43800A02565 /* DianJin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DianJin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB9B26FA1939B43800A02565 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		FB9B26FC1939B43800A02565 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -145,6 +151,7 @@
 		FB20A8BD195C1A3100129C07 /* Libs */ = {
 			isa = PBXGroup;
 			children = (
+				FB20A8E1195EAD9500129C07 /* SafeSetObject */,
 				FB20A8BE195D512900129C07 /* QueryStringBuilder */,
 				FB20A8BC195C1A2100129C07 /* JDJsonDecoder */,
 			);
@@ -173,6 +180,15 @@
 				FB20A8CF195D8FB300129C07 /* QueryNearbyShopsResponse.m */,
 			);
 			name = response;
+			sourceTree = "<group>";
+		};
+		FB20A8E1195EAD9500129C07 /* SafeSetObject */ = {
+			isa = PBXGroup;
+			children = (
+				FB20A8E2195EADB100129C07 /* NSMutableDictionary+SafeSetObject.h */,
+				FB20A8E3195EADB100129C07 /* NSMutableDictionary+SafeSetObject.m */,
+			);
+			name = SafeSetObject;
 			sourceTree = "<group>";
 		};
 		FB9B26EE1939B43800A02565 = {
@@ -263,6 +279,8 @@
 				FB20A8B7195C17CF00129C07 /* DJOperation.m */,
 				FB20A8A6195C0FF900129C07 /* GetShopsOperation.h */,
 				FB20A8A7195C0FF900129C07 /* GetShopsOperation.m */,
+				FB20A8DB195E99AD00129C07 /* GetShopsByDistanceOperation.h */,
+				FB20A8DC195E99AD00129C07 /* GetShopsByDistanceOperation.m */,
 				FB20A8CB195D8A7200129C07 /* GetNearbyShopsOperation.h */,
 				FB20A8CC195D8A7200129C07 /* GetNearbyShopsOperation.m */,
 				FB20A8D7195E880C00129C07 /* GetAllTradesOperation.h */,
@@ -411,6 +429,8 @@
 				FB20A8CD195D8A7200129C07 /* GetNearbyShopsOperation.m in Sources */,
 				FB20A8AF195C134900129C07 /* BaseResponse.m in Sources */,
 				FB20A8B5195C14C700129C07 /* Shop.m in Sources */,
+				FB20A8E4195EADB100129C07 /* NSMutableDictionary+SafeSetObject.m in Sources */,
+				FB20A8DD195E99AD00129C07 /* GetShopsByDistanceOperation.m in Sources */,
 				FB20A8B8195C17CF00129C07 /* DJOperation.m in Sources */,
 				FB20A8A8195C0FF900129C07 /* GetShopsOperation.m in Sources */,
 				FB9B270B1939B43800A02565 /* AppDelegate.m in Sources */,

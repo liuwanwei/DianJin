@@ -7,6 +7,7 @@
 //
 
 #import "BaseOperation.h"
+#import "NSMutableDictionary+SafeSetObject.h"
 
 #define kRequestMetaData     @"request-type"
 

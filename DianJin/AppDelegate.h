@@ -11,6 +11,7 @@
 #import "GetShopsOperation.h"
 #import "GetNearbyShopsOperation.h"
 #import "GetAllTradesOperation.h"
+#import "GetShopsByDistanceOperation.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate, BaseOperationDelegate>
 
