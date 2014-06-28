@@ -8,7 +8,6 @@
 
 #import "GetShopsByDistanceOperation.h"
 #import "QueryShopsResponse.h"
-#import "JDJsonDecoder.h"
 
 @implementation GetShopsByDistanceOperation
 

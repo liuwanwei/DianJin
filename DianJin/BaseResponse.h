@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
+#import "JDJsonDecoder.h"
+
 @interface BaseResponse : NSObject
 
 @property (nonatomic, copy) NSString * status;

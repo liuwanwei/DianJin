@@ -8,7 +8,6 @@
 
 #import "GetAllTradesOperation.h"
 #import "QueryTradesResponse.h"
-#import "JDJsonDecoder.h"
 
 @implementation GetAllTradesOperation
 

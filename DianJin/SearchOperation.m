@@ -1,28 +1,31 @@
 //
-//  GetShopsOperation.m
+//  SearchOperation.m
 //  DianJin
 //
-//  Created by sungeo on 14-6-26.
+//  Created by sungeo on 14-6-28.
 //  Copyright (c) 2014年 DianJinTec. All rights reserved.
 //
 
-#import "GetShopsOperation.h"
-#import "QueryShopsResponse.h"
+#import "SearchOperation.h"
+#import "SearchResponse.h"
 
-@implementation GetShopsOperation
+@implementation SearchOperation
 
-- (id)initWithLongitude:(NSString *)longitude andLatitude:(NSString *)latitude{
+- (id)initWithType:(NSString *)type andName:(NSString *)name{
     if (self = [super init]) {
-        self.longitude = longitude;
-        self.latitude = latitude;
-        self.requestSubUrl = @"/ehome/product!loadCShopByDistance";
+        self.type = type;
+        self.name = name;
+        self.requestSubUrl = @"/ehome/product!find";
     }
     
     return self;
 }
 
 - (ASIHTTPRequest *)createRequest {
-    NSDictionary * params= [NSDictionary dictionaryWithObjectsAndKeys:self.longitude, @"longitude", self.latitude, @"latitude", nil];
+    NSDictionary * params= [[NSDictionary alloc] initWithObjectsAndKeys:
+                            self.type, @"type",
+                            self.name, @"name",
+                            nil];
     
     NSURL * url = [self makeGetApiUrl:self.requestSubUrl withParams:params];
     ASIHTTPRequest * request = [ASIHTTPRequest requestWithURL:url];
@@ -37,8 +40,9 @@
     
     if ([self.requestMetaData isEqualToString:self.requestSubUrl]) {
         NSError * error = nil;
-        QueryShopsResponse * homePageShops = [JDJsonDecoder objectForClass:[QueryShopsResponse class] withData:self.responseData options:0 error:&error];
-        self.shops = homePageShops.cShops;
+        SearchResponse * response = [JDJsonDecoder objectForClass:[SearchResponse class] withData:self.responseData options:0 error:&error];
+        self.products = response.cProducts;
+        self.shops = response.shops;
         
         [self.delegate didSucceed:self];
     }
@@ -48,5 +52,6 @@
     [super requestDidFail:request];
     [self.delegate didFail:self];
 }
+
 
 @end

@@ -10,6 +10,13 @@
 
 #import <ASIHTTPRequest.h>
 
+#import "GetShopsOperation.h"
+#import "GetNearbyShopsOperation.h"
+#import "GetAllTradesOperation.h"
+#import "GetShopsByDistanceOperation.h"
+#import "GetShopsByTimeOperation.h"
+#import "SearchOperation.h"
+
 @implementation AppDelegate
 
 - (void)didSucceed:(BaseOperation *)operation{
@@ -31,9 +38,11 @@
 //    op.trade = 1;
 //    static GetAllTradesOperation * op;
 //    op = [[GetAllTradesOperation alloc] init];
-    static GetShopsByTimeOperation * op;
+//    static GetShopsByTimeOperation * op;
 //    op = [[GetShopsByTimeOperation alloc] initWithLongitude:@"113.5" andLatitude:@"34.5"];
-    op = [[GetShopsByTimeOperation alloc] initWithLongitude:nil andLatitude:nil];
+//    op = [[GetShopsByTimeOperation alloc] initWithLongitude:nil andLatitude:nil];
+    static SearchOperation * op;
+    op = [[SearchOperation alloc] initWithType:kSearchTypeAll andName:@"E10"];
     [op startRequest:self];
     NSLog(@"start request");
     
