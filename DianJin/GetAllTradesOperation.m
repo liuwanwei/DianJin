@@ -10,17 +10,23 @@
 #import "QueryTradesResponse.h"
 #import "JDJsonDecoder.h"
 
-#define kSubUrl     @"/ehome/bussiness/trade!list1"
-
 @implementation GetAllTradesOperation
+
+- (id)init{
+    if (self = [super init]) {
+        self.requestSubUrl = @"/ehome/bussiness/trade!list1";
+    }
+    
+    return self;
+}
 
 - (ASIHTTPRequest *)createRequest {
     NSDictionary * params= [[NSDictionary alloc] init];
     
-    NSURL * url = [self makeGetApiUrl:kSubUrl withParams:params];
+    NSURL * url = [self makeGetApiUrl:self.requestSubUrl withParams:params];
     ASIHTTPRequest * request = [ASIHTTPRequest requestWithURL:url];
     
-    [request setUserInfo:[NSDictionary dictionaryWithObject:kSubUrl forKey:kRequestMetaData]];
+    [request setUserInfo:[NSDictionary dictionaryWithObject:self.requestSubUrl forKey:kRequestMetaData]];
     
     return request;
 }
@@ -28,7 +34,7 @@
 - (void)requestDidFinish:(ASIHTTPRequest *)request {
     [super initResponseForRequest:request];
     
-    if ([self.requestMetaData isEqualToString:kSubUrl]) {
+    if ([self.requestMetaData isEqualToString:self.requestSubUrl]) {
         NSError * error = nil;
         QueryTradesResponse * trades = [JDJsonDecoder objectForClass:[QueryTradesResponse class] withData:self.responseData options:0 error:&error];
         self.allTrades = trades.trades;

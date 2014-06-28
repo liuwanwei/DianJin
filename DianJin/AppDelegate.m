@@ -31,10 +31,9 @@
 //    op.trade = 1;
 //    static GetAllTradesOperation * op;
 //    op = [[GetAllTradesOperation alloc] init];
-    static GetShopsByDistanceOperation * op;
-    op.longitude = @"113.5";
-    op.latitude = @"34.5";
-    op = [[GetShopsByDistanceOperation alloc] init];//WithLongitude:@"113.7" andLatitude:@"37.5"];
+    static GetShopsByTimeOperation * op;
+//    op = [[GetShopsByTimeOperation alloc] initWithLongitude:@"113.5" andLatitude:@"34.5"];
+    op = [[GetShopsByTimeOperation alloc] initWithLongitude:nil andLatitude:nil];
     [op startRequest:self];
     NSLog(@"start request");
     

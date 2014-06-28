@@ -13,6 +13,7 @@
 
 @interface DJOperation : BaseOperation
 
+@property (nonatomic, copy) NSString * requestSubUrl;
 @property (nonatomic, copy) NSString * requestMetaData;
 @property (nonatomic, retain) NSData * responseData;
 

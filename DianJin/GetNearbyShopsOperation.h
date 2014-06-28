@@ -7,11 +7,10 @@
 //
 
 #import "DJOperation.h"
+#import "GetShopsOperation.h"
 
-@interface GetNearbyShopsOperation : DJOperation
+@interface GetNearbyShopsOperation : GetShopsOperation
 
-@property (nonatomic, copy) NSString * longitude;       // [in]
-@property (nonatomic, copy) NSString * latitude;        // [in]
 @property (nonatomic) NSInteger radius;                 // [in]
 @property (nonatomic) NSInteger trade;                  // [in]
 

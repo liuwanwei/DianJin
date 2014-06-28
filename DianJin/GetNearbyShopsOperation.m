@@ -10,9 +10,16 @@
 #import "QueryNearbyShopsResponse.h"
 #import "JDJsonDecoder.h"
 
-#define kSubUrl     @"/ehome/shop/nearBy!nearByBaidu"
-
 @implementation GetNearbyShopsOperation
+
+- (id)initWithLongitude:(NSString *)longitude andLatitude:(NSString *)latitude{
+    if (self = [super initWithLongitude:longitude andLatitude:latitude]) {
+        self.requestSubUrl = @"/ehome/shop/nearBy!nearByBaidu";
+    }
+    
+    return self;
+}
+
 
 - (ASIHTTPRequest *)createRequest {
     NSDictionary * params= [NSDictionary dictionaryWithObjectsAndKeys:
@@ -21,10 +28,10 @@
                             [NSString stringWithFormat:@"%d", self.radius], @"radius",
                             [NSString stringWithFormat:@"%d", self.trade], @"trade", nil];
     
-    NSURL * url = [self makeGetApiUrl:kSubUrl withParams:params];
+    NSURL * url = [self makeGetApiUrl:self.requestSubUrl withParams:params];
     ASIHTTPRequest * request = [ASIHTTPRequest requestWithURL:url];
     
-    [request setUserInfo:[NSDictionary dictionaryWithObject:kSubUrl forKey:kRequestMetaData]];
+    [request setUserInfo:[NSDictionary dictionaryWithObject:self.requestSubUrl forKey:kRequestMetaData]];
     
     return request;
 }
@@ -32,7 +39,7 @@
 - (void)requestDidFinish:(ASIHTTPRequest *)request {
     [super initResponseForRequest:request];
     
-    if ([self.requestMetaData isEqualToString:kSubUrl]) {
+    if ([self.requestMetaData isEqualToString:self.requestSubUrl]) {
         NSError * error = nil;
         QueryNearbyShopsResponse * nearbyShops = [JDJsonDecoder objectForClass:[QueryNearbyShopsResponse class] withData:self.responseData options:0 error:&error];
         self.shops = nearbyShops.shops;

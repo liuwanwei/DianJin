@@ -10,14 +10,13 @@
 #import "QueryShopsResponse.h"
 #import "JDJsonDecoder.h"
 
-#define kSubUrl     @"/ehome/product!loadCShopByDistance"
-
 @implementation GetShopsOperation
 
 - (id)initWithLongitude:(NSString *)longitude andLatitude:(NSString *)latitude{
     if (self = [super init]) {
         self.longitude = longitude;
         self.latitude = latitude;
+        self.requestSubUrl = @"/ehome/product!loadCShopByDistance";
     }
     
     return self;
@@ -26,10 +25,10 @@
 - (ASIHTTPRequest *)createRequest {
     NSDictionary * params= [NSDictionary dictionaryWithObjectsAndKeys:self.longitude, @"longitude", self.latitude, @"latitude", nil];
     
-    NSURL * url = [self makeGetApiUrl:kSubUrl withParams:params];
+    NSURL * url = [self makeGetApiUrl:self.requestSubUrl withParams:params];
     ASIHTTPRequest * request = [ASIHTTPRequest requestWithURL:url];
     
-    [request setUserInfo:[NSDictionary dictionaryWithObject:kSubUrl forKey:kRequestMetaData]];
+    [request setUserInfo:[NSDictionary dictionaryWithObject:self.requestSubUrl forKey:kRequestMetaData]];
     
     return request;
 }
@@ -37,7 +36,7 @@
 - (void)requestDidFinish:(ASIHTTPRequest *)request {
     [super initResponseForRequest:request];
     
-    if ([self.requestMetaData isEqualToString:kSubUrl]) {
+    if ([self.requestMetaData isEqualToString:self.requestSubUrl]) {
         NSError * error = nil;
         QueryShopsResponse * homePageShops = [JDJsonDecoder objectForClass:[QueryShopsResponse class] withData:self.responseData options:0 error:&error];
         self.shops = homePageShops.cShops;
