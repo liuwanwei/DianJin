@@ -7,7 +7,7 @@
 //
 
 #import "GetShopsOperation.h"
-#import "HomePageShops.h"
+#import "QueryShopsResponse.h"
 #import "JDJsonDecoder.h"
 
 #define kSubUrl     @"/ehome/product!loadCShopByDistance"
@@ -39,7 +39,7 @@
     
     if ([self.requestMetaData isEqualToString:kSubUrl]) {
         NSError * error = nil;
-        HomePageShops * homePageShops = [JDJsonDecoder objectForClass:[HomePageShops class] withData:self.responseData options:0 error:&error];
+        QueryShopsResponse * homePageShops = [JDJsonDecoder objectForClass:[QueryShopsResponse class] withData:self.responseData options:0 error:&error];
         self.shops = homePageShops.cShops;
         
         [self.delegate didSucceed:self];

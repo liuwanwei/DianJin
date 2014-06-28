@@ -6,8 +6,8 @@
 //  Copyright (c) 2014年 DianJinTec. All rights reserved.
 //
 
-#import "AllTrades.h"
+#import "QueryTradesResponse.h"
 
-@implementation AllTrades
+@implementation QueryTradesResponse
 
 @end

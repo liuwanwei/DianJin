@@ -10,7 +10,7 @@
 
 @class Shop;
 
-@interface HomePageShops : BaseResponse
+@interface QueryShopsResponse : BaseResponse
 
 @property (nonatomic, strong) NSArray * cShops;
 @property (nonatomic, strong) Shop * cShops__member;    // 用来描述cShops的成员类型

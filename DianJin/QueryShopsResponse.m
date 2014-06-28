@@ -6,8 +6,8 @@
 //  Copyright (c) 2014年 DianJinTec. All rights reserved.
 //
 
-#import "HomePageShops.h"
+#import "QueryShopsResponse.h"
 
-@implementation HomePageShops
+@implementation QueryShopsResponse
 
 @end

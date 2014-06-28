@@ -10,15 +10,15 @@
 		5B477B1166D14E60952156B1 /* libPods-DianJin.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 270BA583725144BB9BF2DC96 /* libPods-DianJin.a */; };
 		FB20A8A8195C0FF900129C07 /* GetShopsOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = FB20A8A7195C0FF900129C07 /* GetShopsOperation.m */; };
 		FB20A8AF195C134900129C07 /* BaseResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = FB20A8AE195C134900129C07 /* BaseResponse.m */; };
-		FB20A8B2195C14A300129C07 /* HomePageShops.m in Sources */ = {isa = PBXBuildFile; fileRef = FB20A8B1195C14A300129C07 /* HomePageShops.m */; };
+		FB20A8B2195C14A300129C07 /* QueryShopsResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = FB20A8B1195C14A300129C07 /* QueryShopsResponse.m */; };
 		FB20A8B5195C14C700129C07 /* Shop.m in Sources */ = {isa = PBXBuildFile; fileRef = FB20A8B4195C14C700129C07 /* Shop.m */; };
 		FB20A8B8195C17CF00129C07 /* DJOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = FB20A8B7195C17CF00129C07 /* DJOperation.m */; };
 		FB20A8BB195C1A1B00129C07 /* JDJsonDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = FB20A8BA195C1A1B00129C07 /* JDJsonDecoder.m */; };
 		FB20A8CA195D5B7C00129C07 /* NSDictionary+QueryStringBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = FB20A8C9195D5B7C00129C07 /* NSDictionary+QueryStringBuilder.m */; };
 		FB20A8CD195D8A7200129C07 /* GetNearbyShopsOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = FB20A8CC195D8A7200129C07 /* GetNearbyShopsOperation.m */; };
-		FB20A8D0195D8FB300129C07 /* NearbyShops.m in Sources */ = {isa = PBXBuildFile; fileRef = FB20A8CF195D8FB300129C07 /* NearbyShops.m */; };
+		FB20A8D0195D8FB300129C07 /* QueryNearbyShopsResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = FB20A8CF195D8FB300129C07 /* QueryNearbyShopsResponse.m */; };
 		FB20A8D3195E86E600129C07 /* Trade.m in Sources */ = {isa = PBXBuildFile; fileRef = FB20A8D2195E86E600129C07 /* Trade.m */; };
-		FB20A8D6195E875400129C07 /* AllTrades.m in Sources */ = {isa = PBXBuildFile; fileRef = FB20A8D5195E875400129C07 /* AllTrades.m */; };
+		FB20A8D6195E875400129C07 /* QueryTradesResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = FB20A8D5195E875400129C07 /* QueryTradesResponse.m */; };
 		FB20A8D9195E880C00129C07 /* GetAllTradesOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = FB20A8D8195E880C00129C07 /* GetAllTradesOperation.m */; };
 		FB9B26FB1939B43800A02565 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB9B26FA1939B43800A02565 /* Foundation.framework */; };
 		FB9B26FD1939B43800A02565 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB9B26FC1939B43800A02565 /* CoreGraphics.framework */; };
@@ -54,8 +54,8 @@
 		FB20A8A7195C0FF900129C07 /* GetShopsOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetShopsOperation.m; sourceTree = "<group>"; };
 		FB20A8AD195C134900129C07 /* BaseResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseResponse.h; sourceTree = "<group>"; };
 		FB20A8AE195C134900129C07 /* BaseResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseResponse.m; sourceTree = "<group>"; };
-		FB20A8B0195C14A300129C07 /* HomePageShops.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomePageShops.h; sourceTree = "<group>"; };
-		FB20A8B1195C14A300129C07 /* HomePageShops.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomePageShops.m; sourceTree = "<group>"; };
+		FB20A8B0195C14A300129C07 /* QueryShopsResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QueryShopsResponse.h; sourceTree = "<group>"; };
+		FB20A8B1195C14A300129C07 /* QueryShopsResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QueryShopsResponse.m; sourceTree = "<group>"; };
 		FB20A8B3195C14C700129C07 /* Shop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Shop.h; sourceTree = "<group>"; };
 		FB20A8B4195C14C700129C07 /* Shop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Shop.m; sourceTree = "<group>"; };
 		FB20A8B6195C17CF00129C07 /* DJOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DJOperation.h; sourceTree = "<group>"; };
@@ -66,12 +66,12 @@
 		FB20A8C9195D5B7C00129C07 /* NSDictionary+QueryStringBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+QueryStringBuilder.m"; sourceTree = "<group>"; };
 		FB20A8CB195D8A7200129C07 /* GetNearbyShopsOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetNearbyShopsOperation.h; sourceTree = "<group>"; };
 		FB20A8CC195D8A7200129C07 /* GetNearbyShopsOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetNearbyShopsOperation.m; sourceTree = "<group>"; };
-		FB20A8CE195D8FB300129C07 /* NearbyShops.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NearbyShops.h; sourceTree = "<group>"; };
-		FB20A8CF195D8FB300129C07 /* NearbyShops.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NearbyShops.m; sourceTree = "<group>"; };
+		FB20A8CE195D8FB300129C07 /* QueryNearbyShopsResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QueryNearbyShopsResponse.h; sourceTree = "<group>"; };
+		FB20A8CF195D8FB300129C07 /* QueryNearbyShopsResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QueryNearbyShopsResponse.m; sourceTree = "<group>"; };
 		FB20A8D1195E86E600129C07 /* Trade.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Trade.h; sourceTree = "<group>"; };
 		FB20A8D2195E86E600129C07 /* Trade.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Trade.m; sourceTree = "<group>"; };
-		FB20A8D4195E875400129C07 /* AllTrades.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AllTrades.h; sourceTree = "<group>"; };
-		FB20A8D5195E875400129C07 /* AllTrades.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AllTrades.m; sourceTree = "<group>"; };
+		FB20A8D4195E875400129C07 /* QueryTradesResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QueryTradesResponse.h; sourceTree = "<group>"; };
+		FB20A8D5195E875400129C07 /* QueryTradesResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QueryTradesResponse.m; sourceTree = "<group>"; };
 		FB20A8D7195E880C00129C07 /* GetAllTradesOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetAllTradesOperation.h; sourceTree = "<group>"; };
 		FB20A8D8195E880C00129C07 /* GetAllTradesOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetAllTradesOperation.m; sourceTree = "<group>"; };
 		FB9B26F71939B43800A02565 /* DianJin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DianJin.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -125,18 +125,10 @@
 		FB20A8AC195C132900129C07 /* model */ = {
 			isa = PBXGroup;
 			children = (
-				FB20A8AD195C134900129C07 /* BaseResponse.h */,
-				FB20A8AE195C134900129C07 /* BaseResponse.m */,
 				FB20A8B3195C14C700129C07 /* Shop.h */,
 				FB20A8B4195C14C700129C07 /* Shop.m */,
 				FB20A8D1195E86E600129C07 /* Trade.h */,
 				FB20A8D2195E86E600129C07 /* Trade.m */,
-				FB20A8B0195C14A300129C07 /* HomePageShops.h */,
-				FB20A8B1195C14A300129C07 /* HomePageShops.m */,
-				FB20A8D4195E875400129C07 /* AllTrades.h */,
-				FB20A8D5195E875400129C07 /* AllTrades.m */,
-				FB20A8CE195D8FB300129C07 /* NearbyShops.h */,
-				FB20A8CF195D8FB300129C07 /* NearbyShops.m */,
 			);
 			name = model;
 			sourceTree = "<group>";
@@ -166,6 +158,21 @@
 				FB20A8C9195D5B7C00129C07 /* NSDictionary+QueryStringBuilder.m */,
 			);
 			name = QueryStringBuilder;
+			sourceTree = "<group>";
+		};
+		FB20A8DA195E8ACE00129C07 /* response */ = {
+			isa = PBXGroup;
+			children = (
+				FB20A8AD195C134900129C07 /* BaseResponse.h */,
+				FB20A8AE195C134900129C07 /* BaseResponse.m */,
+				FB20A8B0195C14A300129C07 /* QueryShopsResponse.h */,
+				FB20A8B1195C14A300129C07 /* QueryShopsResponse.m */,
+				FB20A8D4195E875400129C07 /* QueryTradesResponse.h */,
+				FB20A8D5195E875400129C07 /* QueryTradesResponse.m */,
+				FB20A8CE195D8FB300129C07 /* QueryNearbyShopsResponse.h */,
+				FB20A8CF195D8FB300129C07 /* QueryNearbyShopsResponse.m */,
+			);
+			name = response;
 			sourceTree = "<group>";
 		};
 		FB9B26EE1939B43800A02565 = {
@@ -204,8 +211,9 @@
 			isa = PBXGroup;
 			children = (
 				FB20A8BD195C1A3100129C07 /* Libs */,
-				FB20A8AC195C132900129C07 /* model */,
 				FB9B272F1939BACF00A02565 /* Operation */,
+				FB20A8DA195E8ACE00129C07 /* response */,
+				FB20A8AC195C132900129C07 /* model */,
 				FB9B27091939B43800A02565 /* AppDelegate.h */,
 				FB9B270A1939B43800A02565 /* AppDelegate.m */,
 				FB9B270C1939B43800A02565 /* Main.storyboard */,
@@ -395,8 +403,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FB20A8D0195D8FB300129C07 /* NearbyShops.m in Sources */,
-				FB20A8B2195C14A300129C07 /* HomePageShops.m in Sources */,
+				FB20A8D0195D8FB300129C07 /* QueryNearbyShopsResponse.m in Sources */,
+				FB20A8B2195C14A300129C07 /* QueryShopsResponse.m in Sources */,
 				FB20A8D3195E86E600129C07 /* Trade.m in Sources */,
 				FB9B27111939B43800A02565 /* ViewController.m in Sources */,
 				FB20A8CA195D5B7C00129C07 /* NSDictionary+QueryStringBuilder.m in Sources */,
@@ -407,7 +415,7 @@
 				FB20A8A8195C0FF900129C07 /* GetShopsOperation.m in Sources */,
 				FB9B270B1939B43800A02565 /* AppDelegate.m in Sources */,
 				FB9B27321939BB0100A02565 /* BaseOperation.m in Sources */,
-				FB20A8D6195E875400129C07 /* AllTrades.m in Sources */,
+				FB20A8D6195E875400129C07 /* QueryTradesResponse.m in Sources */,
 				FB20A8BB195C1A1B00129C07 /* JDJsonDecoder.m in Sources */,
 				FB9B27071939B43800A02565 /* main.m in Sources */,
 				FB20A8D9195E880C00129C07 /* GetAllTradesOperation.m in Sources */,

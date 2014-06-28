@@ -7,7 +7,7 @@
 //
 
 #import "GetAllTradesOperation.h"
-#import "AllTrades.h"
+#import "QueryTradesResponse.h"
 #import "JDJsonDecoder.h"
 
 #define kSubUrl     @"/ehome/bussiness/trade!list1"
@@ -30,7 +30,7 @@
     
     if ([self.requestMetaData isEqualToString:kSubUrl]) {
         NSError * error = nil;
-        AllTrades * trades = [JDJsonDecoder objectForClass:[AllTrades class] withData:self.responseData options:0 error:&error];
+        QueryTradesResponse * trades = [JDJsonDecoder objectForClass:[QueryTradesResponse class] withData:self.responseData options:0 error:&error];
         self.allTrades = trades.trades;
         
         [self.delegate didSucceed:self];

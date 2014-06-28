@@ -10,7 +10,7 @@
 
 @class Trade;
 
-@interface AllTrades : BaseResponse
+@interface QueryTradesResponse : BaseResponse
 
 @property (nonatomic, strong) NSArray * trades;
 @property (nonatomic, strong) Trade * trades__member;

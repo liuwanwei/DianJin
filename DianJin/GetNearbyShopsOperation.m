@@ -7,7 +7,7 @@
 //
 
 #import "GetNearbyShopsOperation.h"
-#import "NearbyShops.h"
+#import "QueryNearbyShopsResponse.h"
 #import "JDJsonDecoder.h"
 
 #define kSubUrl     @"/ehome/shop/nearBy!nearByBaidu"
@@ -34,7 +34,7 @@
     
     if ([self.requestMetaData isEqualToString:kSubUrl]) {
         NSError * error = nil;
-        NearbyShops * nearbyShops = [JDJsonDecoder objectForClass:[NearbyShops class] withData:self.responseData options:0 error:&error];
+        QueryNearbyShopsResponse * nearbyShops = [JDJsonDecoder objectForClass:[QueryNearbyShopsResponse class] withData:self.responseData options:0 error:&error];
         self.shops = nearbyShops.shops;
         
         [self.delegate didSucceed:self];

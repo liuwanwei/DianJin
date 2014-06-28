@@ -6,8 +6,8 @@
 //  Copyright (c) 2014年 DianJinTec. All rights reserved.
 //
 
-#import "NearbyShops.h"
+#import "QueryNearbyShopsResponse.h"
 
-@implementation NearbyShops
+@implementation QueryNearbyShopsResponse
 
 @end
