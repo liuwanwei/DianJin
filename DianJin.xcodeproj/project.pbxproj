@@ -35,6 +35,8 @@
 		FB20A905195EC8C500129C07 /* RecInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = FB20A904195EC8C500129C07 /* RecInfo.m */; };
 		FB20A908195F992000129C07 /* QueryOrdersResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = FB20A907195F992000129C07 /* QueryOrdersResponse.m */; };
 		FB20A90B195F997100129C07 /* GetOrdersOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = FB20A90A195F997100129C07 /* GetOrdersOperation.m */; };
+		FB20A90E1960106A00129C07 /* LoginOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = FB20A90D1960106A00129C07 /* LoginOperation.m */; };
+		FB20A9111960114000129C07 /* LoginResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = FB20A9101960114000129C07 /* LoginResponse.m */; };
 		FB9B26FB1939B43800A02565 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB9B26FA1939B43800A02565 /* Foundation.framework */; };
 		FB9B26FD1939B43800A02565 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB9B26FC1939B43800A02565 /* CoreGraphics.framework */; };
 		FB9B26FF1939B43800A02565 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB9B26FE1939B43800A02565 /* UIKit.framework */; };
@@ -119,6 +121,10 @@
 		FB20A907195F992000129C07 /* QueryOrdersResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QueryOrdersResponse.m; sourceTree = "<group>"; };
 		FB20A909195F997100129C07 /* GetOrdersOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetOrdersOperation.h; sourceTree = "<group>"; };
 		FB20A90A195F997100129C07 /* GetOrdersOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetOrdersOperation.m; sourceTree = "<group>"; };
+		FB20A90C1960106A00129C07 /* LoginOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginOperation.h; sourceTree = "<group>"; };
+		FB20A90D1960106A00129C07 /* LoginOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginOperation.m; sourceTree = "<group>"; };
+		FB20A90F1960114000129C07 /* LoginResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginResponse.h; sourceTree = "<group>"; };
+		FB20A9101960114000129C07 /* LoginResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginResponse.m; sourceTree = "<group>"; };
 		FB9B26F71939B43800A02565 /* DianJin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DianJin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB9B26FA1939B43800A02565 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		FB9B26FC1939B43800A02565 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -237,6 +243,8 @@
 				FB20A8F5195EC03800129C07 /* SearchResponse.m */,
 				FB20A906195F992000129C07 /* QueryOrdersResponse.h */,
 				FB20A907195F992000129C07 /* QueryOrdersResponse.m */,
+				FB20A90F1960114000129C07 /* LoginResponse.h */,
+				FB20A9101960114000129C07 /* LoginResponse.m */,
 			);
 			name = response;
 			sourceTree = "<group>";
@@ -350,6 +358,8 @@
 				FB20A8F8195EC17600129C07 /* SearchOperation.m */,
 				FB20A909195F997100129C07 /* GetOrdersOperation.h */,
 				FB20A90A195F997100129C07 /* GetOrdersOperation.m */,
+				FB20A90C1960106A00129C07 /* LoginOperation.h */,
+				FB20A90D1960106A00129C07 /* LoginOperation.m */,
 			);
 			name = Operation;
 			sourceTree = "<group>";
@@ -490,6 +500,7 @@
 				FB20A8D0195D8FB300129C07 /* QueryNearbyShopsResponse.m in Sources */,
 				FB20A8FF195EC8B600129C07 /* User.m in Sources */,
 				FB20A8EA195EBA8800129C07 /* Product.m in Sources */,
+				FB20A9111960114000129C07 /* LoginResponse.m in Sources */,
 				FB20A8B2195C14A300129C07 /* QueryShopsResponse.m in Sources */,
 				FB20A8D3195E86E600129C07 /* Trade.m in Sources */,
 				FB9B27111939B43800A02565 /* ViewController.m in Sources */,
@@ -507,6 +518,7 @@
 				FB20A90B195F997100129C07 /* GetOrdersOperation.m in Sources */,
 				FB20A902195EC8BF00129C07 /* OrderItem.m in Sources */,
 				FB20A8DD195E99AD00129C07 /* GetShopsByDistanceOperation.m in Sources */,
+				FB20A90E1960106A00129C07 /* LoginOperation.m in Sources */,
 				FB20A908195F992000129C07 /* QueryOrdersResponse.m in Sources */,
 				FB20A8B8195C17CF00129C07 /* DJOperation.m in Sources */,
 				FB20A8A8195C0FF900129C07 /* GetShopsOperation.m in Sources */,

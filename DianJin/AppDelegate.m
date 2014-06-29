@@ -17,6 +17,7 @@
 #import "GetShopsByTimeOperation.h"
 #import "SearchOperation.h"
 #import "GetOrdersOperation.h"
+#import "LoginOperation.h"
 
 @implementation AppDelegate
 
@@ -37,8 +38,8 @@
 //    op.radius = 100000;
 //    op.trade = 1;
     
-    static GetAllTradesOperation * op;
-    op = [[GetAllTradesOperation alloc] init];
+//    static GetAllTradesOperation * op;
+//    op = [[GetAllTradesOperation alloc] init];
     
 //    static GetShopsByTimeOperation * op;
 //    op = [[GetShopsByTimeOperation alloc] initWithLongitude:@"113.5" andLatitude:@"34.5"];
@@ -46,10 +47,14 @@
 //    static SearchOperation * op;
 //    op = [[SearchOperation alloc] initWithType:kSearchTypeAll andName:@"E10"];
     
-//    static GetOrdersOperation * op;
-//    op = [[GetOrdersOperation alloc] initWithOrderStatus:0];
-    
+    static LoginOperation * op;
+    op = [[LoginOperation alloc] initWithUsername:@"15188310655" andPassword:@"654321"];
     [op startRequest:self];
+    
+    static GetOrdersOperation * op1;
+    op1 = [[GetOrdersOperation alloc] initWithOrderStatus:0];
+    
+    [op1 startRequest:self];
     NSLog(@"start request");
     
     return YES;

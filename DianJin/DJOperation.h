@@ -23,6 +23,9 @@
 @property (nonatomic, strong) Class responseCls;
 @property (nonatomic, strong) BaseResponse * response;
 
+- (NSString *)relativePathForRequest;
+- (Class)prototypeForResponse;
+
 - (void)initResponseForRequest:(ASIHTTPRequest *)request;
 
 @end

@@ -1,35 +1,37 @@
 //
-//  GetOrdersOperation.m
+//  LoginOperation.m
 //  DianJin
 //
 //  Created by sungeo on 14-6-29.
 //  Copyright (c) 2014年 DianJinTec. All rights reserved.
 //
 
-#import "GetOrdersOperation.h"
-#import "QueryOrdersResponse.h"
+#import "LoginOperation.h"
+#import "LoginResponse.h"
 
-@implementation GetOrdersOperation
+@implementation LoginOperation
 
-- (id)initWithOrderStatus:(NSInteger)theStatus{
+- (id)initWithUsername:(NSString *)aUsername andPassword:(NSString *)aPassword{
     if (self = [super init]) {
-        self.orderStatus = theStatus;
+        self.loginInfo = aUsername;
+        self.password = aPassword;
     }
     
     return self;
 }
 
 - (NSString *)relativePathForRequest{
-    return @"/ehome/myOrder/list";
+    return @"/ehome/login";
 }
 
 - (Class)prototypeForResponse{
-    return [QueryOrdersResponse class];
+    return [LoginResponse class];
 }
 
-- (ASIHTTPRequest *)createRequest {
+- (ASIHTTPRequest *)createRequest{
     NSDictionary * params= [[NSDictionary alloc] initWithObjectsAndKeys:
-                            [NSString stringWithFormat:@"%d", self.orderStatus], @"status_num",
+                            self.loginInfo, @"loginInfo",
+                            self.password, @"password",
                             nil];
     
     NSURL * url = [self makeGetApiUrl:self.requestSubUrl withParams:params];

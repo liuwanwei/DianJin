@@ -8,8 +8,18 @@
 
 #import <Foundation/Foundation.h>
 
-// TODO: 通过API网页的order描述可以看到user描述。
+@class RecInfo;
 
 @interface User : NSObject
+
+@property (nonatomic, copy) NSString * username;
+@property (nonatomic, copy) NSString * labelCn;
+@property (nonatomic) NSInteger role;
+@property (nonatomic, copy) NSString * phone;
+@property (nonatomic, copy) NSString * mktime;          // 注册时间
+@property (nonatomic, copy) NSString * icon;
+@property (nonatomic) NSInteger iconWidth;
+@property (nonatomic) NSInteger iconHeight;
+@property (nonatomic, strong) RecInfo * defaultRecInfo;
 
 @end

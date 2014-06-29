@@ -11,6 +11,15 @@
 
 @implementation DJOperation
 
+- (id)init{
+    if (self = [super init]) {
+        self.responseCls = [self prototypeForResponse];
+        self.requestSubUrl = [self relativePathForRequest];
+    }
+    
+    return self;
+}
+
 // 点近需要每个API都要传format参数过去。
 - (NSURL *)makeGetApiUrl:(NSString *)subUrl withParams:(NSDictionary *)params{
     NSMutableDictionary * djParams = [NSMutableDictionary dictionaryWithDictionary:params];
@@ -41,5 +50,17 @@
     [self.delegate didFail:self];
 }
 
+- (NSString *)relativePathForRequest{
+    [NSException raise:NSInternalInconsistencyException
+                format:@"You must override %@ in a subclass", NSStringFromSelector(_cmd)];
+    return nil;
+}
+
+- (Class)prototypeForResponse{
+    [NSException raise:NSInternalInconsistencyException
+                format:@"You must override %@ in a subclass", NSStringFromSelector(_cmd)];
+    
+    return nil;
+}
 
 @end

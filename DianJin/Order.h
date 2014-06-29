@@ -21,7 +21,7 @@
 @property (nonatomic, copy) NSString * payTypeCn;
 @property (nonatomic, copy) NSString * sendTypeCn;
 @property (nonatomic, strong) RecInfo * recInfo;
-//@property (nonatomic, strong) User * user;
+@property (nonatomic, strong) User * user;
 @property (nonatomic, strong) NSArray * orderItems;
 @property (nonatomic, strong) OrderItem * orderItems__member;
 @property (nonatomic) NSInteger comment;
