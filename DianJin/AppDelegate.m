@@ -16,6 +16,7 @@
 #import "GetShopsByDistanceOperation.h"
 #import "GetShopsByTimeOperation.h"
 #import "SearchOperation.h"
+#import "GetOrdersOperation.h"
 
 @implementation AppDelegate
 
@@ -41,8 +42,10 @@
 //    static GetShopsByTimeOperation * op;
 //    op = [[GetShopsByTimeOperation alloc] initWithLongitude:@"113.5" andLatitude:@"34.5"];
 //    op = [[GetShopsByTimeOperation alloc] initWithLongitude:nil andLatitude:nil];
-    static SearchOperation * op;
-    op = [[SearchOperation alloc] initWithType:kSearchTypeAll andName:@"E10"];
+//    static SearchOperation * op;
+//    op = [[SearchOperation alloc] initWithType:kSearchTypeAll andName:@"E10"];
+    static GetOrdersOperation * op;
+    op = [[GetOrdersOperation alloc] initWithOrderStatus:0];
     [op startRequest:self];
     NSLog(@"start request");
     

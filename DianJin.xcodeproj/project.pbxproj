@@ -29,6 +29,12 @@
 		FB20A8F3195EBD9C00129C07 /* ProductImg.m in Sources */ = {isa = PBXBuildFile; fileRef = FB20A8F2195EBD9C00129C07 /* ProductImg.m */; };
 		FB20A8F6195EC03800129C07 /* SearchResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = FB20A8F5195EC03800129C07 /* SearchResponse.m */; };
 		FB20A8F9195EC17600129C07 /* SearchOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = FB20A8F8195EC17600129C07 /* SearchOperation.m */; };
+		FB20A8FC195EC79000129C07 /* Order.m in Sources */ = {isa = PBXBuildFile; fileRef = FB20A8FB195EC79000129C07 /* Order.m */; };
+		FB20A8FF195EC8B600129C07 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = FB20A8FE195EC8B600129C07 /* User.m */; };
+		FB20A902195EC8BF00129C07 /* OrderItem.m in Sources */ = {isa = PBXBuildFile; fileRef = FB20A901195EC8BF00129C07 /* OrderItem.m */; };
+		FB20A905195EC8C500129C07 /* RecInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = FB20A904195EC8C500129C07 /* RecInfo.m */; };
+		FB20A908195F992000129C07 /* QueryOrdersResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = FB20A907195F992000129C07 /* QueryOrdersResponse.m */; };
+		FB20A90B195F997100129C07 /* GetOrdersOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = FB20A90A195F997100129C07 /* GetOrdersOperation.m */; };
 		FB9B26FB1939B43800A02565 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB9B26FA1939B43800A02565 /* Foundation.framework */; };
 		FB9B26FD1939B43800A02565 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB9B26FC1939B43800A02565 /* CoreGraphics.framework */; };
 		FB9B26FF1939B43800A02565 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB9B26FE1939B43800A02565 /* UIKit.framework */; };
@@ -101,6 +107,18 @@
 		FB20A8F5195EC03800129C07 /* SearchResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchResponse.m; sourceTree = "<group>"; };
 		FB20A8F7195EC17600129C07 /* SearchOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchOperation.h; sourceTree = "<group>"; };
 		FB20A8F8195EC17600129C07 /* SearchOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchOperation.m; sourceTree = "<group>"; };
+		FB20A8FA195EC79000129C07 /* Order.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Order.h; sourceTree = "<group>"; };
+		FB20A8FB195EC79000129C07 /* Order.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Order.m; sourceTree = "<group>"; };
+		FB20A8FD195EC8B600129C07 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		FB20A8FE195EC8B600129C07 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		FB20A900195EC8BF00129C07 /* OrderItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderItem.h; sourceTree = "<group>"; };
+		FB20A901195EC8BF00129C07 /* OrderItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderItem.m; sourceTree = "<group>"; };
+		FB20A903195EC8C500129C07 /* RecInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecInfo.h; sourceTree = "<group>"; };
+		FB20A904195EC8C500129C07 /* RecInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecInfo.m; sourceTree = "<group>"; };
+		FB20A906195F992000129C07 /* QueryOrdersResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QueryOrdersResponse.h; sourceTree = "<group>"; };
+		FB20A907195F992000129C07 /* QueryOrdersResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QueryOrdersResponse.m; sourceTree = "<group>"; };
+		FB20A909195F997100129C07 /* GetOrdersOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetOrdersOperation.h; sourceTree = "<group>"; };
+		FB20A90A195F997100129C07 /* GetOrdersOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetOrdersOperation.m; sourceTree = "<group>"; };
 		FB9B26F71939B43800A02565 /* DianJin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DianJin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB9B26FA1939B43800A02565 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		FB9B26FC1939B43800A02565 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -162,6 +180,14 @@
 				FB20A8EC195EBA9300129C07 /* ShopActivity.m */,
 				FB20A8F1195EBD9C00129C07 /* ProductImg.h */,
 				FB20A8F2195EBD9C00129C07 /* ProductImg.m */,
+				FB20A8FA195EC79000129C07 /* Order.h */,
+				FB20A8FB195EC79000129C07 /* Order.m */,
+				FB20A8FD195EC8B600129C07 /* User.h */,
+				FB20A8FE195EC8B600129C07 /* User.m */,
+				FB20A900195EC8BF00129C07 /* OrderItem.h */,
+				FB20A901195EC8BF00129C07 /* OrderItem.m */,
+				FB20A903195EC8C500129C07 /* RecInfo.h */,
+				FB20A904195EC8C500129C07 /* RecInfo.m */,
 			);
 			name = model;
 			sourceTree = "<group>";
@@ -209,6 +235,8 @@
 				FB20A8EF195EBD6D00129C07 /* QueryProductResponse.m */,
 				FB20A8F4195EC03800129C07 /* SearchResponse.h */,
 				FB20A8F5195EC03800129C07 /* SearchResponse.m */,
+				FB20A906195F992000129C07 /* QueryOrdersResponse.h */,
+				FB20A907195F992000129C07 /* QueryOrdersResponse.m */,
 			);
 			name = response;
 			sourceTree = "<group>";
@@ -320,6 +348,8 @@
 				FB20A8D8195E880C00129C07 /* GetAllTradesOperation.m */,
 				FB20A8F7195EC17600129C07 /* SearchOperation.h */,
 				FB20A8F8195EC17600129C07 /* SearchOperation.m */,
+				FB20A909195F997100129C07 /* GetOrdersOperation.h */,
+				FB20A90A195F997100129C07 /* GetOrdersOperation.m */,
 			);
 			name = Operation;
 			sourceTree = "<group>";
@@ -458,12 +488,15 @@
 			files = (
 				FB20A8F6195EC03800129C07 /* SearchResponse.m in Sources */,
 				FB20A8D0195D8FB300129C07 /* QueryNearbyShopsResponse.m in Sources */,
+				FB20A8FF195EC8B600129C07 /* User.m in Sources */,
 				FB20A8EA195EBA8800129C07 /* Product.m in Sources */,
 				FB20A8B2195C14A300129C07 /* QueryShopsResponse.m in Sources */,
 				FB20A8D3195E86E600129C07 /* Trade.m in Sources */,
 				FB9B27111939B43800A02565 /* ViewController.m in Sources */,
+				FB20A905195EC8C500129C07 /* RecInfo.m in Sources */,
 				FB20A8E7195EB02800129C07 /* GetShopsByTimeOperation.m in Sources */,
 				FB20A8CA195D5B7C00129C07 /* NSDictionary+QueryStringBuilder.m in Sources */,
+				FB20A8FC195EC79000129C07 /* Order.m in Sources */,
 				FB20A8CD195D8A7200129C07 /* GetNearbyShopsOperation.m in Sources */,
 				FB20A8F9195EC17600129C07 /* SearchOperation.m in Sources */,
 				FB20A8AF195C134900129C07 /* BaseResponse.m in Sources */,
@@ -471,7 +504,10 @@
 				FB20A8F3195EBD9C00129C07 /* ProductImg.m in Sources */,
 				FB20A8B5195C14C700129C07 /* Shop.m in Sources */,
 				FB20A8E4195EADB100129C07 /* NSMutableDictionary+SafeSetObject.m in Sources */,
+				FB20A90B195F997100129C07 /* GetOrdersOperation.m in Sources */,
+				FB20A902195EC8BF00129C07 /* OrderItem.m in Sources */,
 				FB20A8DD195E99AD00129C07 /* GetShopsByDistanceOperation.m in Sources */,
+				FB20A908195F992000129C07 /* QueryOrdersResponse.m in Sources */,
 				FB20A8B8195C17CF00129C07 /* DJOperation.m in Sources */,
 				FB20A8A8195C0FF900129C07 /* GetShopsOperation.m in Sources */,
 				FB9B270B1939B43800A02565 /* AppDelegate.m in Sources */,
