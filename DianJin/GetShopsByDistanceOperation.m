@@ -36,22 +36,22 @@
     return request;
 }
 
-- (void)requestDidFinish:(ASIHTTPRequest *)request {
-    [super initResponseForRequest:request];
-    
-    if ([self.requestMetaData isEqualToString:self.requestSubUrl]) {
-        NSError * error = nil;
-        QueryShopsResponse * queryShopsResponse = [JDJsonDecoder objectForClass:[QueryShopsResponse class] withData:self.responseData options:0 error:&error];
-        self.shops = queryShopsResponse.cShops;
-        
-        [self.delegate didSucceed:self];
-    }
-}
-
-- (void)requestDidFail:(ASIHTTPRequest *)request {
-    [super requestDidFail:request];
-    [self.delegate didFail:self];
-}
+//- (void)requestDidFinish:(ASIHTTPRequest *)request {
+//    [super initResponseForRequest:request];
+//    
+//    if ([self.requestMetaData isEqualToString:self.requestSubUrl]) {
+//        NSError * error = nil;
+//        QueryShopsResponse * queryShopsResponse = [JDJsonDecoder objectForClass:[QueryShopsResponse class] withData:self.responseData options:0 error:&error];
+//        self.shops = queryShopsResponse.cShops;
+//        
+//        [self.delegate didSucceed:self];
+//    }
+//}
+//
+//- (void)requestDidFail:(ASIHTTPRequest *)request {
+//    [super requestDidFail:request];
+//    [self.delegate didFail:self];
+//}
 
 
 @end

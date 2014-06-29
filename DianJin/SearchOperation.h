@@ -14,13 +14,16 @@
 #define kSearchTypeCircle       @"i"
 #define kSearchTypeAll          @"all"
 
+@class SearchResponse;
+
 @interface SearchOperation : DJOperation
 
 @property (nonatomic, copy) NSString * type;        // [in]
 @property (nonatomic, copy) NSString * name;        // [in]
 
-@property (nonatomic, strong) NSArray * products;   // [out]
-@property (nonatomic, strong) NSArray * shops;      // [out]
+//@property (nonatomic, strong) SearchResponse * response;
+//@property (nonatomic, strong) NSArray * products;   // [out]
+//@property (nonatomic, strong) NSArray * shops;      // [out]
 
 - (id)initWithType:(NSString *)type andName:(NSString *)name;
 

@@ -14,6 +14,7 @@
 - (id)init{
     if (self = [super init]) {
         self.requestSubUrl = @"/ehome/bussiness/trade!list1";
+        self.responseCls = [QueryTradesResponse class];
     }
     
     return self;
@@ -30,22 +31,22 @@
     return request;
 }
 
-- (void)requestDidFinish:(ASIHTTPRequest *)request {
-    [super initResponseForRequest:request];
-    
-    if ([self.requestMetaData isEqualToString:self.requestSubUrl]) {
-        NSError * error = nil;
-        QueryTradesResponse * trades = [JDJsonDecoder objectForClass:[QueryTradesResponse class] withData:self.responseData options:0 error:&error];
-        self.allTrades = trades.trades;
-        
-        [self.delegate didSucceed:self];
-    }
-}
-
-- (void)requestDidFail:(ASIHTTPRequest *)request {
-    [super requestDidFail:request];
-    [self.delegate didFail:self];
-}
+//- (void)requestDidFinish:(ASIHTTPRequest *)request {
+//    [super initResponseForRequest:request];
+//    
+//    if ([self.requestMetaData isEqualToString:self.requestSubUrl]) {
+//        NSError * error = nil;
+//        QueryTradesResponse * trades = [JDJsonDecoder objectForClass:[QueryTradesResponse class] withData:self.responseData options:0 error:&error];
+//        self.allTrades = trades.trades;
+//        
+//        [self.delegate didSucceed:self];
+//    }
+//}
+//
+//- (void)requestDidFail:(ASIHTTPRequest *)request {
+//    [super requestDidFail:request];
+//    [self.delegate didFail:self];
+//}
 
 
 @end

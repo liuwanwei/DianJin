@@ -8,8 +8,8 @@
 
 #import "DJOperation.h"
 
-@interface GetAllTradesOperation : DJOperation
+@class QueryTradesResponse;
 
-@property (nonatomic, strong) NSArray * allTrades;
+@interface GetAllTradesOperation : DJOperation
 
 @end

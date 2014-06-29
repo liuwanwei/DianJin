@@ -30,22 +30,25 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
 //    static GetNearbyShopsOperation * op;
 //    op = [[GetNearbyShopsOperation alloc] init];
 //    op.longitude = @"113.7";
 //    op.latitude = @"37.5";
 //    op.radius = 100000;
 //    op.trade = 1;
-//    static GetAllTradesOperation * op;
-//    op = [[GetAllTradesOperation alloc] init];
+    
+    static GetAllTradesOperation * op;
+    op = [[GetAllTradesOperation alloc] init];
+    
 //    static GetShopsByTimeOperation * op;
 //    op = [[GetShopsByTimeOperation alloc] initWithLongitude:@"113.5" andLatitude:@"34.5"];
-//    op = [[GetShopsByTimeOperation alloc] initWithLongitude:nil andLatitude:nil];
+    
 //    static SearchOperation * op;
 //    op = [[SearchOperation alloc] initWithType:kSearchTypeAll andName:@"E10"];
-    static GetOrdersOperation * op;
-    op = [[GetOrdersOperation alloc] initWithOrderStatus:0];
+    
+//    static GetOrdersOperation * op;
+//    op = [[GetOrdersOperation alloc] initWithOrderStatus:0];
+    
     [op startRequest:self];
     NSLog(@"start request");
     

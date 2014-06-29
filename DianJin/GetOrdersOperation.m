@@ -15,6 +15,7 @@
     if (self = [super init]) {
         self.orderStatus = theStatus;
         self.requestSubUrl = @"/ehome/myOrder/list";
+        self.responseCls = [QueryOrdersResponse class];
     }
     
     return self;
@@ -33,22 +34,22 @@
     return request;
 }
 
-- (void)requestDidFinish:(ASIHTTPRequest *)request {
-    [super initResponseForRequest:request];
-    
-    if ([self.requestMetaData isEqualToString:self.requestSubUrl]) {
-        NSError * error = nil;
-        QueryOrdersResponse * response = [JDJsonDecoder objectForClass:[QueryOrdersResponse class] withData:self.responseData options:0 error:&error];
-        self.orders = response.orders;
-        
-        [self.delegate didSucceed:self];
-    }
-}
-
-- (void)requestDidFail:(ASIHTTPRequest *)request {
-    [super requestDidFail:request];
-    [self.delegate didFail:self];
-}
+//- (void)requestDidFinish:(ASIHTTPRequest *)request {
+//    [super initResponseForRequest:request];
+//    
+//    if ([self.requestMetaData isEqualToString:self.requestSubUrl]) {
+//        NSError * error = nil;
+//        QueryOrdersResponse * response = [JDJsonDecoder objectForClass:[QueryOrdersResponse class] withData:self.responseData options:0 error:&error];
+//        self.orders = response.orders;
+//        
+//        [self.delegate didSucceed:self];
+//    }
+//}
+//
+//- (void)requestDidFail:(ASIHTTPRequest *)request {
+//    [super requestDidFail:request];
+//    [self.delegate didFail:self];
+//}
 
 
 @end

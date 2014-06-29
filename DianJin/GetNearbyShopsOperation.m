@@ -14,6 +14,7 @@
 - (id)initWithLongitude:(NSString *)longitude andLatitude:(NSString *)latitude{
     if (self = [super initWithLongitude:longitude andLatitude:latitude]) {
         self.requestSubUrl = @"/ehome/shop/nearBy!nearByBaidu";
+        self.responseCls = [QueryNearbyShopsResponse class];
     }
     
     return self;
@@ -35,22 +36,22 @@
     return request;
 }
 
-- (void)requestDidFinish:(ASIHTTPRequest *)request {
-    [super initResponseForRequest:request];
-    
-    if ([self.requestMetaData isEqualToString:self.requestSubUrl]) {
-        NSError * error = nil;
-        QueryNearbyShopsResponse * nearbyShops = [JDJsonDecoder objectForClass:[QueryNearbyShopsResponse class] withData:self.responseData options:0 error:&error];
-        self.shops = nearbyShops.shops;
-        
-        [self.delegate didSucceed:self];
-    }
-}
-
-- (void)requestDidFail:(ASIHTTPRequest *)request {
-    [super requestDidFail:request];
-    [self.delegate didFail:self];
-}
+//- (void)requestDidFinish:(ASIHTTPRequest *)request {
+//    [super initResponseForRequest:request];
+//    
+//    if ([self.requestMetaData isEqualToString:self.requestSubUrl]) {
+//        NSError * error = nil;
+//        QueryNearbyShopsResponse * nearbyShops = [JDJsonDecoder objectForClass:[QueryNearbyShopsResponse class] withData:self.responseData options:0 error:&error];
+//        self.shops = nearbyShops.shops;
+//        
+//        [self.delegate didSucceed:self];
+//    }
+//}
+//
+//- (void)requestDidFail:(ASIHTTPRequest *)request {
+//    [super requestDidFail:request];
+//    [self.delegate didFail:self];
+//}
 
 
 @end

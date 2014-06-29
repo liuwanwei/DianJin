@@ -7,6 +7,7 @@
 //
 
 #import "DJOperation.h"
+#import "JDJsonDecoder.h"
 
 @implementation DJOperation
 
@@ -23,5 +24,22 @@
     
     self.responseData = [request responseData];
 }
+
+- (void)requestDidFinish:(ASIHTTPRequest *)request {
+    [self initResponseForRequest:request];
+    
+    if ([self.requestMetaData isEqualToString:self.requestSubUrl]) {
+        NSError * error = nil;
+        self.response = [JDJsonDecoder objectForClass:self.responseCls withData:self.responseData options:0 error:&error];
+        
+        [self.delegate didSucceed:self];
+    }
+}
+
+- (void)requestDidFail:(ASIHTTPRequest *)request {
+    [super requestDidFail:request];
+    [self.delegate didFail:self];
+}
+
 
 @end

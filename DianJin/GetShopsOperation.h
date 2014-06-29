@@ -12,7 +12,7 @@
 
 @property (nonatomic, copy) NSString * longitude;       // [in]
 @property (nonatomic, copy) NSString * latitude;        // [in]
-@property (nonatomic, retain) NSArray * shops;          // [out]
+//@property (nonatomic, retain) NSArray * shops;          // [out]
 
 - (id)initWithLongitude:(NSString *)longitude andLatitude:(NSString *)latitude;
 

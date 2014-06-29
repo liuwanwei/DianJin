@@ -14,6 +14,6 @@
 @property (nonatomic) NSInteger radius;                 // [in]
 @property (nonatomic) NSInteger trade;                  // [in]
 
-@property (nonatomic, strong) NSArray * shops;          // [out]
+//@property (nonatomic, strong) NSArray * shops;          // [out]
 
 @end

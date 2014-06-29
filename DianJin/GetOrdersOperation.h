@@ -11,7 +11,7 @@
 @interface GetOrdersOperation : DJOperation
 
 @property (nonatomic) NSInteger orderStatus;        // [in]
-@property (nonatomic, strong) NSArray * orders;     // [out]
+//@property (nonatomic, strong) NSArray * orders;     // [out]
 
 - (id)initWithOrderStatus:(NSInteger) theStatus;
 

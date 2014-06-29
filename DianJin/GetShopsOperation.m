@@ -16,6 +16,7 @@
         self.longitude = longitude;
         self.latitude = latitude;
         self.requestSubUrl = @"/ehome/product!loadCShopByDistance";
+        self.responseCls = [QueryShopsResponse class];
     }
     
     return self;
@@ -32,21 +33,21 @@
     return request;
 }
 
-- (void)requestDidFinish:(ASIHTTPRequest *)request {
-    [super initResponseForRequest:request];
-    
-    if ([self.requestMetaData isEqualToString:self.requestSubUrl]) {
-        NSError * error = nil;
-        QueryShopsResponse * homePageShops = [JDJsonDecoder objectForClass:[QueryShopsResponse class] withData:self.responseData options:0 error:&error];
-        self.shops = homePageShops.cShops;
-        
-        [self.delegate didSucceed:self];
-    }
-}
-
-- (void)requestDidFail:(ASIHTTPRequest *)request {
-    [super requestDidFail:request];
-    [self.delegate didFail:self];
-}
+//- (void)requestDidFinish:(ASIHTTPRequest *)request {
+//    [super initResponseForRequest:request];
+//    
+//    if ([self.requestMetaData isEqualToString:self.requestSubUrl]) {
+//        NSError * error = nil;
+//        QueryShopsResponse * homePageShops = [JDJsonDecoder objectForClass:[QueryShopsResponse class] withData:self.responseData options:0 error:&error];
+//        self.shops = homePageShops.cShops;
+//        
+//        [self.delegate didSucceed:self];
+//    }
+//}
+//
+//- (void)requestDidFail:(ASIHTTPRequest *)request {
+//    [super requestDidFail:request];
+//    [self.delegate didFail:self];
+//}
 
 @end
