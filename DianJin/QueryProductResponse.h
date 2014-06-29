@@ -1,8 +1,8 @@
 //
 //  QueryProductResponse.h
-//  DianJin 查询单个产品反馈
+//  DianJin
 //
-//  Created by sungeo on 14-6-28.
+//  Created by sungeo on 14-6-29.
 //  Copyright (c) 2014年 DianJinTec. All rights reserved.
 //
 
@@ -11,8 +11,6 @@
 @class ProductImg;
 
 @interface QueryProductResponse : BaseResponse
-
-// 下面信息跟Product类中保持一致，不得不这样的原因，是这个返回值，直接在第一维返回产品属性
 
 @property (nonatomic) NSInteger id;
 @property (nonatomic, copy) NSString * labelCn;
@@ -27,7 +25,7 @@
 @property (nonatomic) NSInteger tradeId;
 @property (nonatomic, copy) NSString * mktime;
 @property (nonatomic, strong) NSArray * productImgs;
-
 @property (nonatomic, strong) ProductImg * productImgs__member;
+
 
 @end

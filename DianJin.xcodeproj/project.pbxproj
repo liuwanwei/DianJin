@@ -25,7 +25,6 @@
 		FB20A8E7195EB02800129C07 /* GetShopsByTimeOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = FB20A8E6195EB02800129C07 /* GetShopsByTimeOperation.m */; };
 		FB20A8EA195EBA8800129C07 /* Product.m in Sources */ = {isa = PBXBuildFile; fileRef = FB20A8E9195EBA8800129C07 /* Product.m */; };
 		FB20A8ED195EBA9300129C07 /* ShopActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = FB20A8EC195EBA9300129C07 /* ShopActivity.m */; };
-		FB20A8F0195EBD6D00129C07 /* QueryProductResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = FB20A8EF195EBD6D00129C07 /* QueryProductResponse.m */; };
 		FB20A8F3195EBD9C00129C07 /* ProductImg.m in Sources */ = {isa = PBXBuildFile; fileRef = FB20A8F2195EBD9C00129C07 /* ProductImg.m */; };
 		FB20A8F6195EC03800129C07 /* SearchResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = FB20A8F5195EC03800129C07 /* SearchResponse.m */; };
 		FB20A8F9195EC17600129C07 /* SearchOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = FB20A8F8195EC17600129C07 /* SearchOperation.m */; };
@@ -37,6 +36,8 @@
 		FB20A90B195F997100129C07 /* GetOrdersOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = FB20A90A195F997100129C07 /* GetOrdersOperation.m */; };
 		FB20A90E1960106A00129C07 /* LoginOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = FB20A90D1960106A00129C07 /* LoginOperation.m */; };
 		FB20A9111960114000129C07 /* LoginResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = FB20A9101960114000129C07 /* LoginResponse.m */; };
+		FB20A9141960581A00129C07 /* QueryProductResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = FB20A9131960581A00129C07 /* QueryProductResponse.m */; };
+		FB20A917196058F800129C07 /* GetProductOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = FB20A916196058F800129C07 /* GetProductOperation.m */; };
 		FB9B26FB1939B43800A02565 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB9B26FA1939B43800A02565 /* Foundation.framework */; };
 		FB9B26FD1939B43800A02565 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB9B26FC1939B43800A02565 /* CoreGraphics.framework */; };
 		FB9B26FF1939B43800A02565 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB9B26FE1939B43800A02565 /* UIKit.framework */; };
@@ -101,8 +102,6 @@
 		FB20A8E9195EBA8800129C07 /* Product.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Product.m; sourceTree = "<group>"; };
 		FB20A8EB195EBA9300129C07 /* ShopActivity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShopActivity.h; sourceTree = "<group>"; };
 		FB20A8EC195EBA9300129C07 /* ShopActivity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShopActivity.m; sourceTree = "<group>"; };
-		FB20A8EE195EBD6D00129C07 /* QueryProductResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QueryProductResponse.h; sourceTree = "<group>"; };
-		FB20A8EF195EBD6D00129C07 /* QueryProductResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QueryProductResponse.m; sourceTree = "<group>"; };
 		FB20A8F1195EBD9C00129C07 /* ProductImg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductImg.h; sourceTree = "<group>"; };
 		FB20A8F2195EBD9C00129C07 /* ProductImg.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductImg.m; sourceTree = "<group>"; };
 		FB20A8F4195EC03800129C07 /* SearchResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchResponse.h; sourceTree = "<group>"; };
@@ -125,6 +124,10 @@
 		FB20A90D1960106A00129C07 /* LoginOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginOperation.m; sourceTree = "<group>"; };
 		FB20A90F1960114000129C07 /* LoginResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginResponse.h; sourceTree = "<group>"; };
 		FB20A9101960114000129C07 /* LoginResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginResponse.m; sourceTree = "<group>"; };
+		FB20A9121960581A00129C07 /* QueryProductResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QueryProductResponse.h; sourceTree = "<group>"; };
+		FB20A9131960581A00129C07 /* QueryProductResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QueryProductResponse.m; sourceTree = "<group>"; };
+		FB20A915196058F800129C07 /* GetProductOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetProductOperation.h; sourceTree = "<group>"; };
+		FB20A916196058F800129C07 /* GetProductOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetProductOperation.m; sourceTree = "<group>"; };
 		FB9B26F71939B43800A02565 /* DianJin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DianJin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB9B26FA1939B43800A02565 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		FB9B26FC1939B43800A02565 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -237,14 +240,14 @@
 				FB20A8D5195E875400129C07 /* QueryTradesResponse.m */,
 				FB20A8CE195D8FB300129C07 /* QueryNearbyShopsResponse.h */,
 				FB20A8CF195D8FB300129C07 /* QueryNearbyShopsResponse.m */,
-				FB20A8EE195EBD6D00129C07 /* QueryProductResponse.h */,
-				FB20A8EF195EBD6D00129C07 /* QueryProductResponse.m */,
 				FB20A8F4195EC03800129C07 /* SearchResponse.h */,
 				FB20A8F5195EC03800129C07 /* SearchResponse.m */,
 				FB20A906195F992000129C07 /* QueryOrdersResponse.h */,
 				FB20A907195F992000129C07 /* QueryOrdersResponse.m */,
 				FB20A90F1960114000129C07 /* LoginResponse.h */,
 				FB20A9101960114000129C07 /* LoginResponse.m */,
+				FB20A9121960581A00129C07 /* QueryProductResponse.h */,
+				FB20A9131960581A00129C07 /* QueryProductResponse.m */,
 			);
 			name = response;
 			sourceTree = "<group>";
@@ -360,6 +363,8 @@
 				FB20A90A195F997100129C07 /* GetOrdersOperation.m */,
 				FB20A90C1960106A00129C07 /* LoginOperation.h */,
 				FB20A90D1960106A00129C07 /* LoginOperation.m */,
+				FB20A915196058F800129C07 /* GetProductOperation.h */,
+				FB20A916196058F800129C07 /* GetProductOperation.m */,
 			);
 			name = Operation;
 			sourceTree = "<group>";
@@ -514,7 +519,9 @@
 				FB20A8ED195EBA9300129C07 /* ShopActivity.m in Sources */,
 				FB20A8F3195EBD9C00129C07 /* ProductImg.m in Sources */,
 				FB20A8B5195C14C700129C07 /* Shop.m in Sources */,
+				FB20A917196058F800129C07 /* GetProductOperation.m in Sources */,
 				FB20A8E4195EADB100129C07 /* NSMutableDictionary+SafeSetObject.m in Sources */,
+				FB20A9141960581A00129C07 /* QueryProductResponse.m in Sources */,
 				FB20A90B195F997100129C07 /* GetOrdersOperation.m in Sources */,
 				FB20A902195EC8BF00129C07 /* OrderItem.m in Sources */,
 				FB20A8DD195E99AD00129C07 /* GetShopsByDistanceOperation.m in Sources */,
@@ -526,7 +533,6 @@
 				FB9B27321939BB0100A02565 /* BaseOperation.m in Sources */,
 				FB20A8D6195E875400129C07 /* QueryTradesResponse.m in Sources */,
 				FB20A8BB195C1A1B00129C07 /* JDJsonDecoder.m in Sources */,
-				FB20A8F0195EBD6D00129C07 /* QueryProductResponse.m in Sources */,
 				FB9B27071939B43800A02565 /* main.m in Sources */,
 				FB20A8D9195E880C00129C07 /* GetAllTradesOperation.m in Sources */,
 			);
