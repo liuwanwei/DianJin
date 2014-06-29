@@ -23,6 +23,14 @@
 
 - (void)didSucceed:(BaseOperation *)operation{
     NSLog(@"succeed");
+    
+    if ([operation isKindOfClass:[LoginOperation class]]) {
+        static GetOrdersOperation * op1;
+        op1 = [[GetOrdersOperation alloc] initWithOrderStatus:0];
+        
+        [op1 startRequest:self];
+        NSLog(@"请求获取订单");
+    }
 }
 
 - (void)didFail:(BaseOperation *)operation{
@@ -51,10 +59,6 @@
     op = [[LoginOperation alloc] initWithUsername:@"15188310655" andPassword:@"654321"];
     [op startRequest:self];
     
-    static GetOrdersOperation * op1;
-    op1 = [[GetOrdersOperation alloc] initWithOrderStatus:0];
-    
-    [op1 startRequest:self];
     NSLog(@"start request");
     
     return YES;
