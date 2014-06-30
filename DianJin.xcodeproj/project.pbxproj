@@ -43,6 +43,12 @@
 		FB20A92019610B6B00129C07 /* InvitationImg.m in Sources */ = {isa = PBXBuildFile; fileRef = FB20A91F19610B6B00129C07 /* InvitationImg.m */; };
 		FB20A92319610DEB00129C07 /* GetInvitationsOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = FB20A92219610DEB00129C07 /* GetInvitationsOperation.m */; };
 		FB20A92619610DFD00129C07 /* GetInvitationsResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = FB20A92519610DFD00129C07 /* GetInvitationsResponse.m */; };
+		FB20A9291961121300129C07 /* GetAttenResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = FB20A9281961121300129C07 /* GetAttenResponse.m */; };
+		FB20A92C1961124500129C07 /* GetAttenOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = FB20A92B1961124500129C07 /* GetAttenOperation.m */; };
+		FB20A92F196112AA00129C07 /* AddAttenOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = FB20A92E196112AA00129C07 /* AddAttenOperation.m */; };
+		FB20A9321961137C00129C07 /* CancelAttenOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = FB20A9311961137C00129C07 /* CancelAttenOperation.m */; };
+		FB20A9351961146200129C07 /* GetAttenInfoOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = FB20A9341961146200129C07 /* GetAttenInfoOperation.m */; };
+		FB20A938196114D200129C07 /* GetAttenInfoResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = FB20A937196114D200129C07 /* GetAttenInfoResponse.m */; };
 		FB9B26FB1939B43800A02565 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB9B26FA1939B43800A02565 /* Foundation.framework */; };
 		FB9B26FD1939B43800A02565 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB9B26FC1939B43800A02565 /* CoreGraphics.framework */; };
 		FB9B26FF1939B43800A02565 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB9B26FE1939B43800A02565 /* UIKit.framework */; };
@@ -143,6 +149,18 @@
 		FB20A92219610DEB00129C07 /* GetInvitationsOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetInvitationsOperation.m; sourceTree = "<group>"; };
 		FB20A92419610DFD00129C07 /* GetInvitationsResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetInvitationsResponse.h; sourceTree = "<group>"; };
 		FB20A92519610DFD00129C07 /* GetInvitationsResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetInvitationsResponse.m; sourceTree = "<group>"; };
+		FB20A9271961121300129C07 /* GetAttenResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetAttenResponse.h; sourceTree = "<group>"; };
+		FB20A9281961121300129C07 /* GetAttenResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetAttenResponse.m; sourceTree = "<group>"; };
+		FB20A92A1961124500129C07 /* GetAttenOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetAttenOperation.h; sourceTree = "<group>"; };
+		FB20A92B1961124500129C07 /* GetAttenOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetAttenOperation.m; sourceTree = "<group>"; };
+		FB20A92D196112AA00129C07 /* AddAttenOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddAttenOperation.h; sourceTree = "<group>"; };
+		FB20A92E196112AA00129C07 /* AddAttenOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddAttenOperation.m; sourceTree = "<group>"; };
+		FB20A9301961137C00129C07 /* CancelAttenOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CancelAttenOperation.h; sourceTree = "<group>"; };
+		FB20A9311961137C00129C07 /* CancelAttenOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CancelAttenOperation.m; sourceTree = "<group>"; };
+		FB20A9331961146200129C07 /* GetAttenInfoOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetAttenInfoOperation.h; sourceTree = "<group>"; };
+		FB20A9341961146200129C07 /* GetAttenInfoOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetAttenInfoOperation.m; sourceTree = "<group>"; };
+		FB20A936196114D200129C07 /* GetAttenInfoResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetAttenInfoResponse.h; sourceTree = "<group>"; };
+		FB20A937196114D200129C07 /* GetAttenInfoResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetAttenInfoResponse.m; sourceTree = "<group>"; };
 		FB9B26F71939B43800A02565 /* DianJin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DianJin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB9B26FA1939B43800A02565 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		FB9B26FC1939B43800A02565 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -271,6 +289,10 @@
 				FB20A9131960581A00129C07 /* QueryProductResponse.m */,
 				FB20A92419610DFD00129C07 /* GetInvitationsResponse.h */,
 				FB20A92519610DFD00129C07 /* GetInvitationsResponse.m */,
+				FB20A9271961121300129C07 /* GetAttenResponse.h */,
+				FB20A9281961121300129C07 /* GetAttenResponse.m */,
+				FB20A936196114D200129C07 /* GetAttenInfoResponse.h */,
+				FB20A937196114D200129C07 /* GetAttenInfoResponse.m */,
 			);
 			name = response;
 			sourceTree = "<group>";
@@ -390,6 +412,14 @@
 				FB20A916196058F800129C07 /* GetProductOperation.m */,
 				FB20A92119610DEB00129C07 /* GetInvitationsOperation.h */,
 				FB20A92219610DEB00129C07 /* GetInvitationsOperation.m */,
+				FB20A92A1961124500129C07 /* GetAttenOperation.h */,
+				FB20A92B1961124500129C07 /* GetAttenOperation.m */,
+				FB20A92D196112AA00129C07 /* AddAttenOperation.h */,
+				FB20A92E196112AA00129C07 /* AddAttenOperation.m */,
+				FB20A9301961137C00129C07 /* CancelAttenOperation.h */,
+				FB20A9311961137C00129C07 /* CancelAttenOperation.m */,
+				FB20A9331961146200129C07 /* GetAttenInfoOperation.h */,
+				FB20A9341961146200129C07 /* GetAttenInfoOperation.m */,
 			);
 			name = Operation;
 			sourceTree = "<group>";
@@ -529,6 +559,7 @@
 				FB20A8F6195EC03800129C07 /* SearchResponse.m in Sources */,
 				FB20A8D0195D8FB300129C07 /* QueryNearbyShopsResponse.m in Sources */,
 				FB20A8FF195EC8B600129C07 /* User.m in Sources */,
+				FB20A92C1961124500129C07 /* GetAttenOperation.m in Sources */,
 				FB20A8EA195EBA8800129C07 /* Product.m in Sources */,
 				FB20A9111960114000129C07 /* LoginResponse.m in Sources */,
 				FB20A8B2195C14A300129C07 /* QueryShopsResponse.m in Sources */,
@@ -536,6 +567,7 @@
 				FB9B27111939B43800A02565 /* ViewController.m in Sources */,
 				FB20A91A1961051800129C07 /* Invitation.m in Sources */,
 				FB20A905195EC8C500129C07 /* RecInfo.m in Sources */,
+				FB20A9351961146200129C07 /* GetAttenInfoOperation.m in Sources */,
 				FB20A8E7195EB02800129C07 /* GetShopsByTimeOperation.m in Sources */,
 				FB20A8CA195D5B7C00129C07 /* NSDictionary+QueryStringBuilder.m in Sources */,
 				FB20A8FC195EC79000129C07 /* Order.m in Sources */,
@@ -550,6 +582,9 @@
 				FB20A8E4195EADB100129C07 /* NSMutableDictionary+SafeSetObject.m in Sources */,
 				FB20A92319610DEB00129C07 /* GetInvitationsOperation.m in Sources */,
 				FB20A9141960581A00129C07 /* QueryProductResponse.m in Sources */,
+				FB20A938196114D200129C07 /* GetAttenInfoResponse.m in Sources */,
+				FB20A9291961121300129C07 /* GetAttenResponse.m in Sources */,
+				FB20A92F196112AA00129C07 /* AddAttenOperation.m in Sources */,
 				FB20A90B195F997100129C07 /* GetOrdersOperation.m in Sources */,
 				FB20A92019610B6B00129C07 /* InvitationImg.m in Sources */,
 				FB20A902195EC8BF00129C07 /* OrderItem.m in Sources */,
@@ -564,6 +599,7 @@
 				FB20A8D6195E875400129C07 /* QueryTradesResponse.m in Sources */,
 				FB20A8BB195C1A1B00129C07 /* JDJsonDecoder.m in Sources */,
 				FB9B27071939B43800A02565 /* main.m in Sources */,
+				FB20A9321961137C00129C07 /* CancelAttenOperation.m in Sources */,
 				FB20A8D9195E880C00129C07 /* GetAllTradesOperation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
