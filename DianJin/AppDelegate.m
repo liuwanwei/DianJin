@@ -18,6 +18,7 @@
 #import "SearchOperation.h"
 #import "GetOrdersOperation.h"
 #import "LoginOperation.h"
+#import "GetProductOperation.h"
 
 @implementation AppDelegate
 
@@ -55,8 +56,12 @@
 //    static SearchOperation * op;
 //    op = [[SearchOperation alloc] initWithType:kSearchTypeAll andName:@"E10"];
     
-    static LoginOperation * op;
-    op = [[LoginOperation alloc] initWithUsername:@"15188310655" andPassword:@"654321"];
+//    static LoginOperation * op;
+//    op = [[LoginOperation alloc] initWithUsername:@"15188310655" andPassword:@"654321"];
+    
+    static GetProductOperation * op;
+    op = [[GetProductOperation alloc] initWithProductId:10];
+    
     [op startRequest:self];
     
     NSLog(@"start request");
