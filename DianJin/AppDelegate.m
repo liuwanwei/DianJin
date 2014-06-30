@@ -19,6 +19,7 @@
 #import "GetOrdersOperation.h"
 #import "LoginOperation.h"
 #import "GetProductOperation.h"
+#import "GetInvitationsOperation.h"
 
 @implementation AppDelegate
 
@@ -59,8 +60,11 @@
 //    static LoginOperation * op;
 //    op = [[LoginOperation alloc] initWithUsername:@"15188310655" andPassword:@"654321"];
     
-    static GetProductOperation * op;
-    op = [[GetProductOperation alloc] initWithProductId:10];
+//    static GetProductOperation * op;
+//    op = [[GetProductOperation alloc] initWithProductId:10];
+    
+    static GetInvitationsOperation * op;
+    op = [[GetInvitationsOperation alloc] initWithTrade:0];
     
     [op startRequest:self];
     
