@@ -23,6 +23,7 @@
 #import "GetAttenOperation.h"
 #import "AddAttenOperation.h"
 #import "CancelAttenOperation.h"
+#import "GetAttenInfoOperation.h"
 
 @implementation AppDelegate
 
@@ -39,8 +40,11 @@
 //        static CancelAttenOperation * op;
 //        op = [[CancelAttenOperation alloc] initWithUserId:24];
         
-        static AddAttenOperation * op;
-        op = [[AddAttenOperation alloc] initWithUserId:24];
+//        static AddAttenOperation * op;
+//        op = [[AddAttenOperation alloc] initWithUserId:24];
+        
+        static GetAttenInfoOperation * op;
+        op = [[GetAttenInfoOperation alloc] initWithUserId:24];        
         
         [op startRequest:self];
         

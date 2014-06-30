@@ -13,7 +13,6 @@
 @interface GetAttenInfoResponse : BaseResponse
 
 @property (nonatomic, copy) NSString * isatten;         // 是否关注：“已关注”，“未关注”
-@property (nonatomic) BOOL showAtten;                   // 是否显示关注按钮。
 @property (nonatomic, strong) User * user;
 @property (nonatomic, strong) NSArray * invitations;
 @property (nonatomic, strong) Invitation * invitations__member;
