@@ -26,12 +26,7 @@
                             self.name, @"name",
                             nil];
     
-    NSURL * url = [self makeGetApiUrl:self.requestSubUrl withParams:params];
-    ASIHTTPRequest * request = [ASIHTTPRequest requestWithURL:url];
-    
-    [request setUserInfo:[NSDictionary dictionaryWithObject:self.requestSubUrl forKey:kRequestMetaData]];
-    
-    return request;
+    return [self createGetRequestWithParam:params];
 }
 
 - (NSString *)relativePathForRequest{

@@ -28,12 +28,8 @@
     [params safeSetIntObject:self.tradeId forKey:@"tradeId"];
     [params safeSetObject:self.region forKey:@"region"];
     
-    NSURL * url = [self makeGetApiUrl:self.requestSubUrl withParams:params];
-    ASIHTTPRequest * request = [ASIHTTPRequest requestWithURL:url];
     
-    [request setUserInfo:[NSDictionary dictionaryWithObject:self.requestSubUrl forKey:kRequestMetaData]];
-    
-    return request;
+    return [self createGetRequestWithParam:params];
 }
 
 @end

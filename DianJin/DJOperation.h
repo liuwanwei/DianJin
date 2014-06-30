@@ -23,6 +23,9 @@
 @property (nonatomic, strong) Class responseCls;
 @property (nonatomic, strong) BaseResponse * response;
 
+- (ASIHTTPRequest *)createGetRequestWithParam:(NSDictionary *)params;
+
+// 派生类必须重写这两个函数，传递url路径和反馈包解析类原型。
 - (NSString *)relativePathForRequest;
 - (Class)prototypeForResponse;
 

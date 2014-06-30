@@ -28,12 +28,7 @@
                             [NSString stringWithFormat:@"%d", self.radius], @"radius",
                             [NSString stringWithFormat:@"%d", self.trade], @"trade", nil];
     
-    NSURL * url = [self makeGetApiUrl:self.requestSubUrl withParams:params];
-    ASIHTTPRequest * request = [ASIHTTPRequest requestWithURL:url];
-    
-    [request setUserInfo:[NSDictionary dictionaryWithObject:self.requestSubUrl forKey:kRequestMetaData]];
-    
-    return request;
+    return [self createGetRequestWithParam:params];
 }
 
 //- (void)requestDidFinish:(ASIHTTPRequest *)request {
