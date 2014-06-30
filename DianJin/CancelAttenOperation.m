@@ -20,7 +20,7 @@
 }
 
 - (NSString *)relativePathForRequest{
-    return @"/ehome/user/useratten!atten_cancel";
+    return @"/ehome/user/useratten!atten_cancle";
 }
 
 - (Class)prototypeForResponse{

@@ -20,6 +20,9 @@
 #import "LoginOperation.h"
 #import "GetProductOperation.h"
 #import "GetInvitationsOperation.h"
+#import "GetAttenOperation.h"
+#import "AddAttenOperation.h"
+#import "CancelAttenOperation.h"
 
 @implementation AppDelegate
 
@@ -27,11 +30,21 @@
     NSLog(@"succeed");
     
     if ([operation isKindOfClass:[LoginOperation class]]) {
-        static GetOrdersOperation * op1;
-        op1 = [[GetOrdersOperation alloc] initWithOrderStatus:0];
+//        static GetOrdersOperation * op;
+//        op = [[GetOrdersOperation alloc] initWithOrderStatus:0];
+
+//        static GetAttenOperation * op;
+//        op = [[GetAttenOperation alloc] init];
         
-        [op1 startRequest:self];
-        NSLog(@"请求获取订单");
+//        static CancelAttenOperation * op;
+//        op = [[CancelAttenOperation alloc] initWithUserId:24];
+        
+        static AddAttenOperation * op;
+        op = [[AddAttenOperation alloc] initWithUserId:24];
+        
+        [op startRequest:self];
+        
+        NSLog(@"请求个人信息");
     }
 }
 
@@ -57,14 +70,14 @@
 //    static SearchOperation * op;
 //    op = [[SearchOperation alloc] initWithType:kSearchTypeAll andName:@"E10"];
     
-//    static LoginOperation * op;
-//    op = [[LoginOperation alloc] initWithUsername:@"15188310655" andPassword:@"654321"];
+    static LoginOperation * op;
+    op = [[LoginOperation alloc] initWithUsername:@"15188310655" andPassword:@"654321"];
     
 //    static GetProductOperation * op;
 //    op = [[GetProductOperation alloc] initWithProductId:10];
     
-    static GetInvitationsOperation * op;
-    op = [[GetInvitationsOperation alloc] initWithTrade:0];
+//    static GetInvitationsOperation * op;
+//    op = [[GetInvitationsOperation alloc] initWithTrade:0];
     
     [op startRequest:self];
     

@@ -12,7 +12,7 @@
 
 @interface GetAttenResponse : BaseResponse
 
-@property (nonatomic, strong) NSArray * attenList;
-@property (nonatomic, strong) User * attenList__member;
+@property (nonatomic, strong) NSArray * attenlist;
+@property (nonatomic, strong) User * attenlist__member;
 
 @end

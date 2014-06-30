@@ -12,7 +12,7 @@
 @implementation GetAttenOperation
 
 - (NSString *)relativePathForRequest{
-    return @"/user/useratten!atten_list";
+    return @"/ehome/user/useratten!atten_list";
 }
 
 - (Class)prototypeForResponse{
