@@ -26,6 +26,9 @@
 #import "GetAttenInfoOperation.h"
 #import "UploadFileOperation.h"
 #import "AddInvitationOperation.h"
+#import "CommentOperation.h"
+#import "ReplyOperation.h"
+#import "DeleteOperation.h"
 
 @implementation AppDelegate
 
@@ -48,12 +51,21 @@
 //        static GetAttenInfoOperation * op;
 //        op = [[GetAttenInfoOperation alloc] initWithUserId:24];
         
-        static AddInvitationOperation * op;
-        op = [[AddInvitationOperation alloc] init];
-        op.labelCn = @"测试发帖";
-        op.content = @"你有多久没有看过这片海";
-        op.longitude = @"113.5";
-        op.latitude = @"34.5";
+//        static AddInvitationOperation * op;
+//        op = [[AddInvitationOperation alloc] init];
+//        op.labelCn = @"测试发帖";
+//        op.content = @"你有多久没有看过这片海";
+//        op.longitude = @"113.5";
+//        op.latitude = @"34.5";
+        
+//        static CommentOperation * op;
+//        op = [[CommentOperation alloc] initWithInvitationId:255 andContent:@"羡慕妒忌恨"];
+        
+//        static ReplyOperation * op;
+//        op = [[ReplyOperation alloc] initWithInvitation:255 andContent:@"空虚寂寞冷" andReply:137];
+        
+        static DeleteOperation * op;
+        op = [[DeleteOperation alloc] initWithInvitation:255];
         
         [op startRequest:self];
         
