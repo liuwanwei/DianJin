@@ -53,6 +53,9 @@
 		FB20A93F19617FD200129C07 /* ReplyOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = FB20A93E19617FD200129C07 /* ReplyOperation.m */; };
 		FB20A9421961805200129C07 /* ReplyResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = FB20A9411961805200129C07 /* ReplyResponse.m */; };
 		FB20A9451961812F00129C07 /* DeleteOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = FB20A9441961812F00129C07 /* DeleteOperation.m */; };
+		FB20A9481962338B00129C07 /* UploadFileOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = FB20A9471962338B00129C07 /* UploadFileOperation.m */; };
+		FB20A94B1962340200129C07 /* UploadFileResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = FB20A94A1962340200129C07 /* UploadFileResponse.m */; };
+		FB20A94D19623FE100129C07 /* meinv.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FB20A94C19623FE100129C07 /* meinv.jpg */; };
 		FB9B26FB1939B43800A02565 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB9B26FA1939B43800A02565 /* Foundation.framework */; };
 		FB9B26FD1939B43800A02565 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB9B26FC1939B43800A02565 /* CoreGraphics.framework */; };
 		FB9B26FF1939B43800A02565 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB9B26FE1939B43800A02565 /* UIKit.framework */; };
@@ -173,6 +176,11 @@
 		FB20A9411961805200129C07 /* ReplyResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReplyResponse.m; sourceTree = "<group>"; };
 		FB20A9431961812F00129C07 /* DeleteOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeleteOperation.h; sourceTree = "<group>"; };
 		FB20A9441961812F00129C07 /* DeleteOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeleteOperation.m; sourceTree = "<group>"; };
+		FB20A9461962338B00129C07 /* UploadFileOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UploadFileOperation.h; sourceTree = "<group>"; };
+		FB20A9471962338B00129C07 /* UploadFileOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UploadFileOperation.m; sourceTree = "<group>"; };
+		FB20A9491962340200129C07 /* UploadFileResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UploadFileResponse.h; sourceTree = "<group>"; };
+		FB20A94A1962340200129C07 /* UploadFileResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UploadFileResponse.m; sourceTree = "<group>"; };
+		FB20A94C19623FE100129C07 /* meinv.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = meinv.jpg; sourceTree = "<group>"; };
 		FB9B26F71939B43800A02565 /* DianJin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DianJin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB9B26FA1939B43800A02565 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		FB9B26FC1939B43800A02565 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -307,6 +315,8 @@
 				FB20A937196114D200129C07 /* GetAttenInfoResponse.m */,
 				FB20A9401961805200129C07 /* ReplyResponse.h */,
 				FB20A9411961805200129C07 /* ReplyResponse.m */,
+				FB20A9491962340200129C07 /* UploadFileResponse.h */,
+				FB20A94A1962340200129C07 /* UploadFileResponse.m */,
 			);
 			name = response;
 			sourceTree = "<group>";
@@ -373,6 +383,7 @@
 		FB9B27011939B43800A02565 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				FB20A94C19623FE100129C07 /* meinv.jpg */,
 				FB9B27021939B43800A02565 /* DianJin-Info.plist */,
 				FB9B27031939B43800A02565 /* InfoPlist.strings */,
 				FB9B27061939B43800A02565 /* main.m */,
@@ -440,6 +451,8 @@
 				FB20A93E19617FD200129C07 /* ReplyOperation.m */,
 				FB20A9431961812F00129C07 /* DeleteOperation.h */,
 				FB20A9441961812F00129C07 /* DeleteOperation.m */,
+				FB20A9461962338B00129C07 /* UploadFileOperation.h */,
+				FB20A9471962338B00129C07 /* UploadFileOperation.m */,
 			);
 			name = Operation;
 			sourceTree = "<group>";
@@ -522,6 +535,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB20A94D19623FE100129C07 /* meinv.jpg in Resources */,
 				FB9B27131939B43800A02565 /* Images.xcassets in Resources */,
 				FB9B27051939B43800A02565 /* InfoPlist.strings in Resources */,
 				FB9B270E1939B43800A02565 /* Main.storyboard in Resources */,
@@ -583,6 +597,7 @@
 				FB20A8EA195EBA8800129C07 /* Product.m in Sources */,
 				FB20A9421961805200129C07 /* ReplyResponse.m in Sources */,
 				FB20A9111960114000129C07 /* LoginResponse.m in Sources */,
+				FB20A94B1962340200129C07 /* UploadFileResponse.m in Sources */,
 				FB20A8B2195C14A300129C07 /* QueryShopsResponse.m in Sources */,
 				FB20A8D3195E86E600129C07 /* Trade.m in Sources */,
 				FB9B27111939B43800A02565 /* ViewController.m in Sources */,
@@ -624,6 +639,7 @@
 				FB20A8BB195C1A1B00129C07 /* JDJsonDecoder.m in Sources */,
 				FB9B27071939B43800A02565 /* main.m in Sources */,
 				FB20A9321961137C00129C07 /* CancelAttenOperation.m in Sources */,
+				FB20A9481962338B00129C07 /* UploadFileOperation.m in Sources */,
 				FB20A8D9195E880C00129C07 /* GetAllTradesOperation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

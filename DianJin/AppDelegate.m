@@ -24,6 +24,7 @@
 #import "AddAttenOperation.h"
 #import "CancelAttenOperation.h"
 #import "GetAttenInfoOperation.h"
+#import "UploadFileOperation.h"
 
 @implementation AppDelegate
 
@@ -74,14 +75,19 @@
 //    static SearchOperation * op;
 //    op = [[SearchOperation alloc] initWithType:kSearchTypeAll andName:@"E10"];
     
-    static LoginOperation * op;
-    op = [[LoginOperation alloc] initWithUsername:@"15188310655" andPassword:@"654321"];
+//    static LoginOperation * op;
+//    op = [[LoginOperation alloc] initWithUsername:@"15188310655" andPassword:@"654321"];
     
 //    static GetProductOperation * op;
 //    op = [[GetProductOperation alloc] initWithProductId:10];
     
 //    static GetInvitationsOperation * op;
 //    op = [[GetInvitationsOperation alloc] initWithTrade:0];
+    
+    static UploadFileOperation * op;
+    NSString * path = [[NSBundle mainBundle] pathForResource:@"meinv"
+                                                      ofType:@"jpg"];
+    op = [[UploadFileOperation alloc] initWithFilePath:path];
     
     [op startRequest:self];
     

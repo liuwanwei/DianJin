@@ -43,6 +43,37 @@
     return request;
 }
 
+- (ASIHTTPRequest *)createPostRequestWithParam:(NSDictionary *)params{
+    NSURL * url = [self makePostApiUrl:self.requestSubUrl];
+    
+    ASIFormDataRequest * request = [ASIFormDataRequest requestWithURL:url];
+  
+    // 处理文件数据
+    NSString * filePath = [params objectForKey:kUploadFilename];
+    NSString * postField = [params objectForKey:kUploadFileFieldName];
+    if (filePath == nil || postField == nil) {
+        [NSException raise:NSInvalidArgumentException
+                    format:@"%@ 参数错误", NSStringFromSelector(_cmd)];
+        return nil;
+    }
+    
+    [request setFile:filePath forKey:postField];
+    
+    // 处理其他参数
+    NSMutableDictionary * leftParams = [NSMutableDictionary dictionaryWithDictionary:params];
+    [leftParams removeObjectForKey:kUploadFileFieldName];
+    [leftParams removeObjectForKey:kUploadFilename];
+    for (NSString * key in leftParams.allKeys) {
+        [request setPostValue:[leftParams objectForKey:key] forKey:key];
+    }
+    
+    [request setPostValue:@"json" forKey:@"format"];
+    
+    [request setUserInfo:[NSDictionary dictionaryWithObject:self.requestSubUrl forKey:kRequestMetaData]];
+    
+    return request;
+}
+
 - (void)requestDidFinish:(ASIHTTPRequest *)request {
     [self initResponseForRequest:request];
     
