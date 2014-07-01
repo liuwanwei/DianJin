@@ -25,6 +25,7 @@
 #import "CancelAttenOperation.h"
 #import "GetAttenInfoOperation.h"
 #import "UploadFileOperation.h"
+#import "AddInvitationOperation.h"
 
 @implementation AppDelegate
 
@@ -44,8 +45,15 @@
 //        static AddAttenOperation * op;
 //        op = [[AddAttenOperation alloc] initWithUserId:24];
         
-        static GetAttenInfoOperation * op;
-        op = [[GetAttenInfoOperation alloc] initWithUserId:24];        
+//        static GetAttenInfoOperation * op;
+//        op = [[GetAttenInfoOperation alloc] initWithUserId:24];
+        
+        static AddInvitationOperation * op;
+        op = [[AddInvitationOperation alloc] init];
+        op.labelCn = @"测试发帖";
+        op.content = @"你有多久没有看过这片海";
+        op.longitude = @"113.5";
+        op.latitude = @"34.5";
         
         [op startRequest:self];
         
@@ -70,13 +78,15 @@
 //    op = [[GetAllTradesOperation alloc] init];
     
 //    static GetShopsByTimeOperation * op;
+//    op.radius = 10000;
 //    op = [[GetShopsByTimeOperation alloc] initWithLongitude:@"113.5" andLatitude:@"34.5"];
     
 //    static SearchOperation * op;
 //    op = [[SearchOperation alloc] initWithType:kSearchTypeAll andName:@"E10"];
-    
-//    static LoginOperation * op;
-//    op = [[LoginOperation alloc] initWithUsername:@"15188310655" andPassword:@"654321"];
+
+    // 用户登录。
+    static LoginOperation * op;
+    op = [[LoginOperation alloc] initWithUsername:@"15188310655" andPassword:@"654321"];
     
 //    static GetProductOperation * op;
 //    op = [[GetProductOperation alloc] initWithProductId:10];
@@ -84,10 +94,9 @@
 //    static GetInvitationsOperation * op;
 //    op = [[GetInvitationsOperation alloc] initWithTrade:0];
     
-    static UploadFileOperation * op;
-    NSString * path = [[NSBundle mainBundle] pathForResource:@"meinv"
-                                                      ofType:@"jpg"];
-    op = [[UploadFileOperation alloc] initWithFilePath:path];
+//    static UploadFileOperation * op;
+//    NSString * path = [[NSBundle mainBundle] pathForResource:@"meinv"
+//    op = [[UploadFileOperation alloc] initWithFilePath:path];
     
     [op startRequest:self];
     

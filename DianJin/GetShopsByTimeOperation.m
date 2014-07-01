@@ -24,8 +24,8 @@
     NSMutableDictionary * params = [[NSMutableDictionary alloc] init];
     [params safeSetObject:self.longitude forKey:@"longitude"];
     [params safeSetObject:self.latitude forKey:@"latitude"];
-    [params safeSetIntObject:self.radius forKey:@"radius"];
-    [params safeSetIntObject:self.tradeId forKey:@"tradeId"];
+    [params safeSetInteger:self.radius forKey:@"radius"];
+    [params safeSetInteger:self.tradeId forKey:@"tradeId"];
     [params safeSetObject:self.region forKey:@"region"];
     
     

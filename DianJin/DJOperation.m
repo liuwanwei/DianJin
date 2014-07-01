@@ -51,15 +51,11 @@
     // 处理文件数据
     NSString * filePath = [params objectForKey:kUploadFilename];
     NSString * postField = [params objectForKey:kUploadFileFieldName];
-    if (filePath == nil || postField == nil) {
-        [NSException raise:NSInvalidArgumentException
-                    format:@"%@ 参数错误", NSStringFromSelector(_cmd)];
-        return nil;
+    if (filePath != nil && postField != nil) {
+        [request setFile:filePath forKey:postField];
     }
     
-    [request setFile:filePath forKey:postField];
-    
-    // 处理其他参数
+    // 处理其他参数（除了文件数据之外）
     NSMutableDictionary * leftParams = [NSMutableDictionary dictionaryWithDictionary:params];
     [leftParams removeObjectForKey:kUploadFileFieldName];
     [leftParams removeObjectForKey:kUploadFilename];

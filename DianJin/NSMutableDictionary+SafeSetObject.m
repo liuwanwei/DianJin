@@ -8,9 +8,9 @@
     }
 }
 
-- (void)safeSetIntObject:(NSInteger)anObject forKey:(id < NSCopying >)aKey{
+- (void)safeSetInteger:(NSInteger)anObject forKey:(id < NSCopying >)aKey{
     if (anObject != 0){
-        [self setObject:[NSNumber numberWithInteger:anObject] forKey:aKey];
+        [self setObject:[NSString stringWithFormat:@"%d", anObject] forKey:aKey];
     }
 }
 

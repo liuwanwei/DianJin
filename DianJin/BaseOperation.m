@@ -9,7 +9,7 @@
 #import "JSONKit.h"
 #import "NSDictionary+QueryStringBuilder.h"
 
-#define ROOT_URL @"http://115.29.38.195:8080"
+#define ROOT_URL @"http://115.29.38.195:81"
 #define MakeApiUrl(subUrl,param)  [NSString stringWithFormat:@"%@%@%@",ROOT_URL,subUrl,param]
 
 #define HEAD  @"head"
